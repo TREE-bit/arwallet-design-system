@@ -7095,7 +7095,9 @@ const tokenKeyLabel = {
   value: "取值", type: "类型", offsetX: "水平偏移", offsetY: "垂直偏移", blur: "模糊", spread: "扩展",
   alpha: "不透明度", candidates: "候选", suggestion: "建议", group: "组", values: "色值", rule: "规则",
   statement: "说明", category: "分类", id: "编号", scopes: "范围", height: "高度", width: "宽度",
-  padding: "内边距", sample: "样本"
+  padding: "内边距", sample: "样本",
+  boundVariablesInFirst2000BuyNodes: "买入前 2000 个节点里绑定变量的数量",
+  effectStyles: "效果样式数量"
 };
 const tokenSectionTitle = {
   existing: "稿面已有", existingVariables: "文件里已有的颜色变量", existingObservations: "采样到的颜色",
@@ -7171,7 +7173,7 @@ function paintTokens(host, docs) {
       if (value == null || typeof value === "object") return;
       const p = document.createElement("p");
       p.className = "note";
-      p.textContent = String(value);
+      p.textContent = typeof value === "number" ? ((tokenKeyLabel[key] || key) + "：" + value) : String(value);
       article.appendChild(p);
     });
     Object.keys(doc.data).forEach(key => {
