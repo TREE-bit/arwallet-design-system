@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "status": "blocked",
+    "confirmation": "unconfirmed",
+    "reason": "No source component was copied into a library, so there is no mapping."
+  },
+  "mappings": []
+}

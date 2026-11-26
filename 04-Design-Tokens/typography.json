@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "lineHeight": "Unread as a designed scale. Sampled text uses line height AUTO. Do not invent a pixel line height.",
+    "letterSpacing": "Many Latin/Roboto texts carry about -0.32px. Chinese body text was not proven to use that tracking. Status Pending."
+  },
+  "existingFamilies": [
+    { "family": "PingFang SC", "status": "Existing", "roles": ["Regular", "Medium", "Semibold"], "pages": ["买入业务", "卖出业务", "订单流转", "我的", "教程引导"], "note": "中文主字体。买入样本 405，卖出 486，订单 1338。" },
+    { "family": "Roboto", "status": "Existing", "roles": ["Regular", "Medium", "Bold", "SemiBold"], "pages": ["买入业务", "卖出业务", "收银台"], "note": "数字与英文。买入样本 591。" },
+    { "family": "SF Pro Text", "status": "Existing", "roles": ["Semibold"], "pages": ["买入业务", "订单流转", "我的"], "note": "主要出现在状态栏时间，不作为业务字体。" },
+    { "family": "Inter", "status": "Existing", "roles": ["Regular"], "pages": ["AR钱包_彩票"], "note": "彩票页。不要用到 390 客户端。" },
+    { "family": "Alibaba PuHuiTi 3.0", "status": "Existing", "sampleCount": 13, "page": "买入业务", "note": "偶发，不纳入推荐。" },
+    { "family": "Noto Sans TC", "status": "Existing", "sampleCount": 10, "page": "买入业务", "note": "偶发。" },
+    { "family": "PingFang TC", "status": "Existing", "sampleCount": 6, "page": "我的", "note": "偶发。" },
+    { "family": "Arial Narrow", "status": "Existing", "sampleCount": 8, "page": "卖出业务", "note": "偶发斜体，不纳入推荐。" },
+    { "family": "Source Sans Pro", "status": "Existing", "sampleCount": 8, "page": "我的", "note": "偶发。" }
+  ],
+  "existingSizes": [
+    { "px": 14, "status": "Existing", "scene": "正文", "evidence": "买入 500、卖出 454、订单 1219、我的 404" },
+    { "px": 16, "status": "Existing", "scene": "按钮、强调、部分标题", "evidence": "买入 201、卖出 192、订单 328。短信验证主按钮 16 Medium，小按钮 14 Regular。" },
+    { "px": 12, "status": "Existing", "scene": "辅助说明", "evidence": "买入 151、订单 157、我的 136" },
+    { "px": 20, "status": "Existing", "scene": "弹框标题", "evidence": "节点 4455:3542，PingFang SC Semibold 20" },
+    { "px": 18, "status": "Existing", "scene": "区块标题或状态", "evidence": "买入 53、卖出 40、订单 60。与 16/20 的分工未确认。" },
+    { "px": 10, "status": "Existing", "scene": "极小标注", "evidence": "买入 47。不推荐作为新正文。" },
+    { "px": 24, "status": "Existing", "scene": "少量大标题", "evidence": "买入 16，教程 39" }
+  ],
+  "recommended": [
+    { "name": "type.dialog-title", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Semibold", "size": 20, "lineHeight": "AUTO", "align": "CENTER", "color": "#1F262F", "nodeId": "4455:3542" },
+    { "name": "type.body", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Regular", "size": 14, "lineHeight": "AUTO", "align": "LEFT", "color": "#1F262F" },
+    { "name": "type.caption", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Regular", "size": 12, "lineHeight": "AUTO", "align": "LEFT", "color": "#7E858E" },
+    { "name": "type.button-large", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Medium", "size": 16, "lineHeight": "AUTO", "align": "CENTER", "color": "#1F262F", "nodeId": "4455:3532" },
+    { "name": "type.button-small", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Regular", "size": 14, "lineHeight": "AUTO", "align": "CENTER", "color": "#1F262F", "nodeId": "4455:3540" },
+    { "name": "type.link", "status": "Recommended", "confirmation": "unconfirmed", "family": "PingFang SC", "weight": "Medium", "size": 14, "lineHeight": "AUTO", "align": "LEFT", "color": "#F5BA00", "nodeId": "4455:3536" },
+    { "name": "type.amount", "status": "Pending", "confirmation": "unconfirmed", "family": "Roboto", "weight": "Medium", "size": 16, "lineHeight": "AUTO", "color": "#1F262F", "note": "弹框内金额按 16 Medium。个人中心大数字使用了更大的字号，尚未单列成确认档。" },
+    { "name": "type.number", "status": "Recommended", "confirmation": "unconfirmed", "family": "Roboto", "weight": "Regular", "note": "拉丁字母与数字用 Roboto，中文用 PingFang SC。同一句混排在稿面真实存在。" }
+  ]
+}

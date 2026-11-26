@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "limit": "只完整读取了买入页上的底部导航图标组件。业务图标、银行 logo 多数是页面内的矢量或图片框，没有做成一套可检索的图标组件库。"
+  },
+  "existingComponents": [
+    { "name": "icon_home1", "id": "2240:5112", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_home2", "id": "2240:5094", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_buy1", "id": "1:5632", "status": "Existing", "size": 24, "category": "navigation", "sample": "内部矢量描边 1.5，颜色 #FFFFFF" },
+    { "name": "icon_buy2", "id": "1:5637", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_sell1", "id": "1:5642", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_sell2", "id": "1:5647", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_order1", "id": "1:5652", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_order2", "id": "1:5658", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_my1", "id": "1:5664", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_my2", "id": "1:5672", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_task1", "id": "1243:5980", "status": "Existing", "size": 24, "category": "navigation" },
+    { "name": "icon_task2", "id": "1243:5981", "status": "Existing", "size": 24, "category": "navigation" }
+  ],
+  "observations": [
+    { "status": "Existing", "statement": "底部导航使用成对组件，命名为 icon_{功能}1 与 icon_{功能}2，画板尺寸 24。实例名采样里常见 24x24。" },
+    { "status": "Existing", "statement": "图标是矢量，不是独立的 SVG 图标文件。icon_buy1 的一个内部矢量描边为 1.5。这不能外推为所有图标的描边。" },
+    { "status": "Pending", "statement": "1 与 2 哪一个是选中态，不能从组件内部颜色判断。抽到的填充主要是 #FFFFFF、#D9D9D9、#CFD1D4、#C2C5C8。选中金色可能画在实例外面。" },
+    { "status": "Pending", "statement": "Paytm、PhonePe 等在收银台是独立画框。没有证明它们与 24px 线性图标是同一风格，应单独作为银行品牌素材。" },
+    { "status": "Existing", "statement": "同一导航功能至少有两个组件版本。页面实例同时出现 icon_home1 与 icon_home2。" }
+  ],
+  "recommended": [
+    { "name": "icon.size.default", "status": "Recommended", "confirmation": "unconfirmed", "px": 24, "scene": "导航与同级功能图标" },
+    { "name": "icon.source", "status": "Recommended", "confirmation": "unconfirmed", "rule": "继续使用文件内已有图标组件。不要引入另一套图标库替换现有导航图标。" }
+  ]
+}

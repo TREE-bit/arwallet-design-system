@@ -1,0 +1,103 @@
+{
+  "rule": "只记录候选关联，不删除文件。选中与未选中导航继续都保留。",
+  "candidates": [
+    {
+      "assets": [
+        "logo-mark-64",
+        "logo-app-64",
+        "logo-app-120",
+        "logo-mark-192"
+      ],
+      "kind": "同一金色 A 的不同尺寸或白底",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "logo-app-icon-1024",
+        "logo-app-icon-512"
+      ],
+      "kind": "同一应用图标位图的两档原图",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "logo-app-dark-24",
+        "logo-app-gold-100"
+      ],
+      "kind": "都是 A 标，底色和字标不同",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "logo-arb-admin",
+        "logo-arwallet-wordmark"
+      ],
+      "kind": "都是金色 A 加深色字，版式不同",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "banner-tutorial-720",
+        "banner-tutorial-360"
+      ],
+      "kind": "同一教程图的两种原图尺寸",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "bank-phonepe",
+        "bank-phonepe-ring"
+      ],
+      "kind": "都是 PhonePe 图形，颜色和尺寸不同",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "illustration-appeal-1",
+        "illustration-appeal-phone-alt"
+      ],
+      "kind": "同一题材的两张原图",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "illustration-appeal-2",
+        "illustration-appeal-card-alt"
+      ],
+      "kind": "同一题材的两张原图",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "avatar-03",
+        "avatar-04"
+      ],
+      "kind": "同一人物的两张原图",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "business-reward-type",
+        "business-order-reward"
+      ],
+      "kind": "颜色接近，图形不同",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "nav-home-active",
+        "nav-home-inactive"
+      ],
+      "kind": "选中与未选中",
+      "action": "keep"
+    },
+    {
+      "assets": [
+        "nav-task-active",
+        "nav-task-inactive"
+      ],
+      "kind": "颜色不同，白色图形也不同",
+      "action": "keep"
+    }
+  ]
+}

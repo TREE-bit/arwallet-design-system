@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed"
+  },
+  "existing": [
+    { "name": "screen.width", "status": "Existing", "px": 390, "scene": "客户端页面基准宽度", "evidence": "买入、卖出、订单、我的、收银台的手机框绝大多数为 390。内容条常见 360，即 390 减去左右各 15。" },
+    { "name": "screen.width.lottery", "status": "Existing", "px": 750, "scene": "彩票页", "pageId": "1:20315", "note": "另一套宽度，不作为客户端基准。" },
+    { "name": "control.height.48", "status": "Existing", "px": 48, "scene": "主按钮、输入框、多类列表行", "evidence": "买入 Auto Layout 高度样本 71，卖出 80，订单 159，我的 137，教程 81，自动交易 140。短信验证主按钮与输入框节点高度均为 48。", "nodeIds": ["4455:3531", "4455:3537"] },
+    { "name": "control.height.32", "status": "Existing", "px": 32, "scene": "小按钮", "evidence": "短信验证「发送」4455:3539 为 52x32。我的页高度 32 的 Auto Layout 样本 83。", "nodeId": "4455:3539" },
+    { "name": "dialog.width", "status": "Existing", "px": 330, "scene": "弹框", "nodeId": "4455:3530" },
+    { "name": "dialog.header.height", "status": "Existing", "px": 56, "scene": "弹框标题行，无底色", "nodeId": "4455:3541" },
+    { "name": "statusbar.height", "status": "Existing", "px": 47, "scene": "状态栏组件", "evidence": "买入页顶层 StatusBar_white / StatusBar_black 为 390x47。" },
+    { "name": "icon.tab", "status": "Existing", "px": 24, "scene": "底部导航图标组件", "nodeIds": ["2240:5112", "1:5632"] }
+  ],
+  "recommended": [
+    { "name": "size.screen", "status": "Recommended", "confirmation": "unconfirmed", "px": 390 },
+    { "name": "size.button.large", "status": "Recommended", "confirmation": "unconfirmed", "height": 48, "width": "fill" },
+    { "name": "size.button.small", "status": "Recommended", "confirmation": "unconfirmed", "height": 32, "padding": "6 12" },
+    { "name": "size.input", "status": "Recommended", "confirmation": "unconfirmed", "height": 48 },
+    { "name": "size.dialog", "status": "Recommended", "confirmation": "unconfirmed", "width": 330 },
+    { "name": "size.icon.default", "status": "Recommended", "confirmation": "unconfirmed", "px": 24 }
+  ],
+  "pending": [
+    { "name": "size.list-item", "status": "Pending", "confirmation": "unconfirmed", "candidates": [48, 56, 64], "note": "48 是控件高度众数，订单页另有大量 80 高的块，卖出收款方式有 64 与 106 两套。列表项高度不能从众数直接定成唯一标准。" },
+    { "name": "size.nav-bar", "status": "Pending", "confirmation": "unconfirmed", "note": "状态栏 47 已测到。页面标题栏与底部 Tab 的高度本次没有逐个组件量完，不能写成已确认值。" },
+    { "name": "size.safe-area.bottom", "status": "Pending", "confirmation": "unconfirmed", "note": "未从节点中分离出独立的底部安全区数值。" }
+  ]
+}

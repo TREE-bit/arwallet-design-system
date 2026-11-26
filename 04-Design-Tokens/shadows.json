@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "effectStyles": 0,
+    "conclusion": "没有统一阴影样式。短信验证弹框节点没有投影。我的页有 193 个内阴影，订单和启动页有少量外阴影。这些不能收成一个已确认 elevation。"
+  },
+  "existing": [
+    { "type": "DROP_SHADOW", "status": "Existing", "offsetX": 0, "offsetY": 4, "blur": 8, "spread": 0, "hex": "#000000", "alpha": 0.12, "sampleCount": 2, "page": "启动页", "pageId": "1:52" },
+    { "type": "DROP_SHADOW", "status": "Existing", "offsetX": 0, "offsetY": 8, "blur": 32, "spread": 0, "hex": "#000000", "alpha": 0.08, "sampleCount": 1, "page": "启动页", "pageId": "1:52" },
+    { "type": "DROP_SHADOW", "status": "Existing", "offsetX": 0, "offsetY": 2, "blur": 8, "spread": 0, "hex": "#000000", "alpha": 0.05, "sampleCount": 5, "page": "订单流转", "pageId": "1:6406" },
+    { "type": "DROP_SHADOW", "status": "Existing", "offsetX": 0, "offsetY": 2, "blur": 6, "spread": 0, "hex": "#EAEAEE", "alpha": 1, "sampleCount": 9, "page": "我的", "pageId": "1:6407" },
+    { "type": "DROP_SHADOW", "status": "Existing", "offsetX": 0, "offsetY": 4, "blur": 10, "spread": 0, "hex": "#2886F4", "alpha": 0.4, "sampleCount": 10, "page": "卖出业务", "pageId": "1:6405", "note": "彩色投影成组出现，包含蓝、青、橙、紫、红。像是收款方式 logo 的装饰，不是界面层级。" },
+    { "type": "INNER_SHADOW", "status": "Existing", "sampleCount": 193, "page": "我的", "pageId": "1:6407", "note": "参数未逐条展开。数量高，但是否为按钮或输入的统一内阴影尚未读取。" },
+    { "type": "BACKGROUND_BLUR", "status": "Existing", "sampleCount": 10, "page": "买入业务", "pageId": "1:424" }
+  ],
+  "recommended": [
+    { "name": "shadow.dialog", "status": "Recommended", "confirmation": "unconfirmed", "value": "none", "reason": "历史短信验证弹框没有阴影。新弹框不要自行加投影。" }
+  ],
+  "pending": [
+    { "name": "shadow.card", "status": "Pending", "confirmation": "unconfirmed", "note": "卡片投影存在多组数值，确认前保持原画面，不要选一组当成全站阴影。" }
+  ]
+}

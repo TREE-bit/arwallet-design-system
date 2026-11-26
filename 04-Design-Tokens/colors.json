@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "sourceFileName": "AR Wallet",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "method": "Figma Plugin API read via use_figma. Solid fills and text fills were counted inside a per-page node cap. Counts are sample frequencies, not file totals.",
+    "coverage": "Deep color samples: 启动页, 教程引导, 买入业务, 卖出业务, 收银台, 交易申诉, 订单流转, 我的, 自动交易, 彩票. 买入/订单/我的 stopped at 8000 nodes. 教程/收银台/自动交易/彩票 stopped at 5000 nodes. 换肤, UI走查, UI界面整理 were inventoried only and excluded from frequency so duplicates are not double-counted.",
+    "styles": { "paint": 0, "text": 0, "effect": 0 },
+    "boundVariablesInFirst2000BuyNodes": 0
+  },
+  "existingVariables": [
+    {
+      "id": "VariableID:2279:7036",
+      "name": "color_box_list",
+      "status": "Existing",
+      "hex": "#A6E4F8",
+      "rgba": "rgba(166, 228, 248, 1)",
+      "scopes": ["ALL_SCOPES"],
+      "note": "Local variable. Not observed as a high-frequency screen fill in the sampled pages."
+    },
+    {
+      "id": "VariableID:2279:7037",
+      "name": "secondary color",
+      "status": "Existing",
+      "hex": "#FEAA57",
+      "rgba": "rgba(254, 170, 87, 1)",
+      "scopes": ["ALL_SCOPES"],
+      "note": "Named secondary, but the high-frequency accent in screens is #FFC40B."
+    },
+    {
+      "id": "VariableID:3100:5329",
+      "name": "text_red",
+      "status": "Existing",
+      "hex": "#FB5B5B",
+      "rgba": "rgba(251, 91, 91, 1)",
+      "scopes": ["ALL_SCOPES"]
+    },
+    {
+      "id": "VariableID:3100:6013",
+      "name": "text_green",
+      "status": "Existing",
+      "hex": "#06B36A",
+      "rgba": "rgba(6, 179, 106, 1)",
+      "scopes": ["ALL_SCOPES"]
+    }
+  ],
+  "existingObservations": [
+    { "hex": "#1F262F", "role": "text", "status": "Existing", "sampleCount": 527, "page": "买入业务", "pageId": "1:424", "nodeId": "4455:3542", "scene": "正文、标题。短信验证标题节点。" },
+    { "hex": "#FFC40B", "role": "fill", "status": "Existing", "sampleCount": 111, "page": "买入业务", "pageId": "1:424", "nodeId": "4455:3531", "scene": "主按钮、卖出页确认添加。" },
+    { "hex": "#FFFFFF", "role": "fill", "status": "Existing", "sampleCount": 153, "page": "我的", "pageId": "1:6407", "nodeId": "4455:3530", "scene": "卡片、弹框底。短信验证弹框底。" },
+    { "hex": "#F7F8FC", "role": "fill", "status": "Existing", "sampleCount": 79, "page": "订单流转", "pageId": "1:6406", "nodeId": "19463:13429", "scene": "个人中心页面底。同组还有 #F5F6FA、#F7F7F7、#F0F1F5、#F5F5F5、#F3F3F5。" },
+    { "hex": "#F5F6FA", "role": "fill", "status": "Existing", "sampleCount": 94, "page": "我的", "pageId": "1:6407", "nodeId": "4455:3537", "scene": "输入框底。短信验证验证码输入框。" },
+    { "hex": "#7E858E", "role": "text", "status": "Existing", "sampleCount": 549, "page": "订单流转", "pageId": "1:6406", "scene": "次级说明文字。买入样本 117，卖出样本 97。" },
+    { "hex": "#99A1AC", "role": "text", "status": "Existing", "sampleCount": 28, "page": "卖出业务", "pageId": "1:6405", "nodeId": "4455:3538", "scene": "输入占位。附近还有 #A2A7AC、#8C9196。" },
+    { "hex": "#F5BA00", "role": "text", "status": "Existing", "sampleCount": 30, "page": "买入业务", "pageId": "1:424", "nodeId": "4455:3536", "scene": "文字链，如联系客服、取消订单。" },
+    { "hex": "#E6E7EB", "role": "stroke", "status": "Existing", "sampleCount": 41, "page": "我的", "pageId": "1:6407", "scene": "1px 描边。订单页更高频的是 #DCDDE0。" },
+    { "hex": "#DCDDE0", "role": "stroke", "status": "Existing", "sampleCount": 112, "page": "订单流转", "pageId": "1:6406", "scene": "1px 描边或分割。" },
+    { "hex": "#FC7878", "role": "text", "status": "Existing", "sampleCount": 27, "page": "卖出业务", "pageId": "1:6405", "scene": "错误文字。我的页另有 text #EE4D4D。与变量 #FB5B5B 接近但不同。" },
+    { "hex": "#2CC660", "role": "fill", "status": "Existing", "sampleCount": 67, "page": "订单流转", "pageId": "1:6406", "scene": "成功或完成标记。同页还有 #37D729。描边绿 #4CB957。与变量 #06B36A 不同。" },
+    { "hex": "#FAC10C", "role": "fill", "status": "Existing", "sampleCount": 55, "page": "收银台", "pageId": "924:1655", "scene": "收银台金色，与主流程 #FFC40B 相差一个色阶。" },
+    { "hex": "#333333", "role": "text", "status": "Existing", "sampleCount": 478, "page": "AR钱包_彩票", "pageId": "1:20315", "scene": "彩票页主文字。该页宽 750，不纳入 390 客户端推荐色。" }
+  ],
+  "recommended": [
+    { "name": "color.brand.primary", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#FFC40B", "rgba": "rgba(255, 196, 11, 1)", "role": "品牌主色 / 主按钮", "reason": "买入、卖出、我的样本中的高频率实心金。变量里的 secondary color #FEAA57 不是这套按钮色。" },
+    { "name": "color.brand.link", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#F5BA00", "rgba": "rgba(245, 186, 0, 1)", "role": "金色文字链", "reason": "短信验证「联系客服」与旧订单弹框「取消订单」。" },
+    { "name": "color.text.primary", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#1F262F", "rgba": "rgba(31, 38, 47, 1)", "role": "主要文字", "reason": "买入、卖出、订单、我的文字填充的最高频值。" },
+    { "name": "color.text.secondary", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#7E858E", "rgba": "rgba(126, 133, 142, 1)", "role": "次要文字", "reason": "订单页样本 549 次，高于 #A2A7AC 与 #5E646A。" },
+    { "name": "color.text.tertiary", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#99A1AC", "rgba": "rgba(153, 161, 172, 1)", "role": "辅助文字 / 占位", "reason": "短信验证占位符。禁用色未单独测到，不要把这个色直接当成 disabled。" },
+    { "name": "color.text.inverse", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#FFFFFF", "rgba": "rgba(255, 255, 255, 1)", "role": "深色底上的文字", "reason": "卖出与订单页大量白色文字。" },
+    { "name": "color.bg.page", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#F7F8FC", "rgba": "rgba(247, 248, 252, 1)", "role": "页面背景", "reason": "个人中心与订单页可见。必须先确认是否合并 #F5F6FA / #F7F7F7 / #F0F1F5。" },
+    { "name": "color.bg.surface", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#FFFFFF", "rgba": "rgba(255, 255, 255, 1)", "role": "卡片与弹框", "reason": "弹框与卡片的实测底色。" },
+    { "name": "color.bg.sunken", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#F5F6FA", "rgba": "rgba(245, 246, 250, 1)", "role": "输入框", "reason": "短信验证输入框 4455:3537。" },
+    { "name": "color.bg.muted", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#F3F3F5", "rgba": "rgba(243, 243, 245, 1)", "role": "弱分区", "reason": "我的与卖出样本中的浅灰块。旧订单弹框次操作行是 #FBFBFB，二者尚未合并。" },
+    { "name": "color.border.default", "status": "Recommended", "confirmation": "unconfirmed", "hex": "#DCDDE0", "rgba": "rgba(220, 221, 224, 1)", "role": "默认描边", "reason": "订单页 1px 描边样本最高。#E6E7EB、#EBECF0 待合并。" },
+    { "name": "color.status.danger", "status": "Pending", "confirmation": "unconfirmed", "hex": "#FB5B5B", "rgba": "rgba(251, 91, 91, 1)", "role": "失败", "reason": "只采用已有变量作为候选。稿面同时存在 #FC7878 与 #EE4D4D。" },
+    { "name": "color.status.success", "status": "Pending", "confirmation": "unconfirmed", "hex": "#06B36A", "rgba": "rgba(6, 179, 106, 1)", "role": "成功", "reason": "只采用已有变量作为候选。稿面同时存在 #2CC660、#37D729、#4CB957。" },
+    { "name": "color.status.warning", "status": "Pending", "confirmation": "unconfirmed", "hex": "#FEAA57", "rgba": "rgba(254, 170, 87, 1)", "role": "警告", "reason": "来自变量 secondary color。采样页没有证明它是警告色。" }
+  ],
+  "nearDuplicates": [
+    { "group": "page-gray", "values": ["#F7F8FC", "#F5F6FA", "#F7F7F7", "#F0F1F5", "#F5F5F5", "#F3F3F5", "#F2F3F7"], "suggestion": "页面底与输入框底先分成两档，其余合并前需产品确认。" },
+    { "group": "secondary-text", "values": ["#7E858E", "#A2A7AC", "#99A1AC", "#8C9196", "#5E646A", "#5D5D5D"], "suggestion": "次级文字保留 #7E858E，占位保留 #99A1AC。" },
+    { "group": "gold", "values": ["#FFC40B", "#F5BA00", "#FAC10C", "#DBB22A", "#FFECB1"], "suggestion": "按钮用 #FFC40B，文字链用 #F5BA00。收银台 #FAC10C 不要单独扩散。" },
+    { "group": "danger", "values": ["#FB5B5B", "#FC7878", "#EE4D4D", "#FF5A58", "#FA5A5A"], "suggestion": "客户端与彩票页分开统计后再定一个失败色。" },
+    { "group": "success", "values": ["#06B36A", "#2CC660", "#37D729", "#4CB957"], "suggestion": "成功色尚未在稿面收敛。" }
+  ]
+}

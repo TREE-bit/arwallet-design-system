@@ -1,0 +1,800 @@
+{
+  "updated_at": "2026-11-25",
+  "stage01_note": "这份覆盖清单是整理前的扫描。2026-11-25 页面已改名并新增页面，结构以 figma-structure-change-report.md 为准。这里的顶层数量不要再当成今天的全文件结构。",
+  "method": "按页面读取顶层 Frame。没有一次遍历整页深层节点。截图不能自动对上节点坐标，所以视觉素材数量标为待核实，不写百分比。",
+  "limits": [
+    "未加载的页面，顶层子节点读出来是 0。必须先切到该页。本轮没有刷新内挂、收银台、订单流转、自动交易、换肤、走查的顶层名单。",
+    "卖出页顶层 116 个，本轮只记下前 40 个。",
+    "教程引导和我的的内容在 Section 里面。顶层只有 Section，内部没有扫完。",
+    "get_screenshot 只给画面，不返回图层坐标，不能自动把视觉对象对上节点。"
+  ],
+  "excluded_pages": [
+    {
+      "page_id": "1:20315",
+      "page_name": "AR钱包_彩票",
+      "reason": "按任务排除"
+    },
+    {
+      "page_id": "22365:9776",
+      "page_name": "UI界面整理",
+      "reason": "参考页，不重复导出"
+    },
+    {
+      "page_id": "24867:3406",
+      "page_name": "【参考】换肤",
+      "reason": "参考页，不重复导出。本轮未刷新顶层名单。"
+    },
+    {
+      "page_id": "3165:3766",
+      "page_name": "【参考】1.5版本UI走查",
+      "reason": "参考页，不重复导出。本轮未刷新顶层名单。"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "1:52",
+      "page_name": "启动页",
+      "scan_status": "top_listed",
+      "node_read_complete": true,
+      "top_listed": 36,
+      "top_total": 36,
+      "client_frames_in_list": 3,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "顶层 36 个已列出。内部画面没有逐个截图。512 桌面标、金币装饰、登录背景还没导出。",
+      "frames": [
+        {
+          "id": "1:53",
+          "name": "1",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "1:55",
+          "name": "2",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "8233:2",
+          "name": "3",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "29006:8581",
+          "name": "4",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "29014:2",
+          "name": "5",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "1:57",
+          "name": "ARB_后台logo",
+          "type": "FRAME",
+          "w": 232,
+          "h": 64
+        },
+        {
+          "id": "1:69",
+          "name": "ARB_后台logo_小",
+          "type": "FRAME",
+          "w": 64,
+          "h": 64
+        },
+        {
+          "id": "1:71",
+          "name": "ARB_App_logo",
+          "type": "FRAME",
+          "w": 64,
+          "h": 64
+        },
+        {
+          "id": "1:75",
+          "name": "ARB_logo",
+          "type": "FRAME",
+          "w": 200,
+          "h": 200
+        },
+        {
+          "id": "1:87",
+          "name": "App_icon_1024",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 1024
+        },
+        {
+          "id": "9096:1948",
+          "name": "App_icon_1024",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 1024
+        },
+        {
+          "id": "1:91",
+          "name": "App_icon_120",
+          "type": "FRAME",
+          "w": 120,
+          "h": 120
+        },
+        {
+          "id": "1:95",
+          "name": "启动页_640x960",
+          "type": "FRAME",
+          "w": 640,
+          "h": 960
+        },
+        {
+          "id": "1:142",
+          "name": "启动页_640x1136",
+          "type": "FRAME",
+          "w": 640,
+          "h": 1136
+        },
+        {
+          "id": "1:189",
+          "name": "启动页_750x1334",
+          "type": "FRAME",
+          "w": 750,
+          "h": 1334
+        },
+        {
+          "id": "4683:1159",
+          "name": "Frame 4",
+          "type": "FRAME",
+          "w": 121,
+          "h": 140
+        },
+        {
+          "id": "4683:1136",
+          "name": "Frame 3",
+          "type": "FRAME",
+          "w": 391,
+          "h": 382
+        },
+        {
+          "id": "1:236",
+          "name": "启动页_828x1792",
+          "type": "FRAME",
+          "w": 828,
+          "h": 1792
+        },
+        {
+          "id": "1:283",
+          "name": "启动页_1125x2436",
+          "type": "FRAME",
+          "w": 1125,
+          "h": 2436
+        },
+        {
+          "id": "1:330",
+          "name": "启动页_1242x2208",
+          "type": "FRAME",
+          "w": 1242,
+          "h": 2208
+        },
+        {
+          "id": "1:377",
+          "name": "启动页_1242x2688",
+          "type": "FRAME",
+          "w": 1242,
+          "h": 2688
+        },
+        {
+          "id": "4229:1161",
+          "name": "添加桌面_logo_192x192",
+          "type": "FRAME",
+          "w": 192,
+          "h": 192
+        },
+        {
+          "id": "4229:1164",
+          "name": "添加桌面_logo_512x512",
+          "type": "FRAME",
+          "w": 512,
+          "h": 512
+        },
+        {
+          "id": "7563:2425",
+          "name": "AR Wallet登录页背景",
+          "type": "FRAME",
+          "w": 1920,
+          "h": 960
+        },
+        {
+          "id": "7602:4376",
+          "name": "Frame 1420069918",
+          "type": "FRAME",
+          "w": 475,
+          "h": 354
+        },
+        {
+          "id": "7597:4053",
+          "name": "Group 1420069916",
+          "type": "GROUP",
+          "w": 905,
+          "h": 715
+        },
+        {
+          "id": "7602:4362",
+          "name": "Frame 1420069917",
+          "type": "FRAME",
+          "w": 109,
+          "h": 167
+        },
+        {
+          "id": "7750:2",
+          "name": "ARB商户后台-2",
+          "type": "FRAME",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "7750:547",
+          "name": "ARB总后台-2",
+          "type": "FRAME",
+          "w": 1920,
+          "h": 1080
+        },
+        {
+          "id": "8267:5377",
+          "name": "下载页",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "8275:5513",
+          "name": "金币2",
+          "type": "GROUP",
+          "w": 100,
+          "h": 250
+        },
+        {
+          "id": "8275:5497",
+          "name": "金币1",
+          "type": "GROUP",
+          "w": 95,
+          "h": 124
+        },
+        {
+          "id": "9096:1952",
+          "name": "IMG_0004 1",
+          "type": "RECTANGLE",
+          "w": 1170,
+          "h": 2532
+        },
+        {
+          "id": "9096:1953",
+          "name": "App_icon_1024",
+          "type": "RECTANGLE",
+          "w": 181,
+          "h": 181
+        },
+        {
+          "id": "9096:1954",
+          "name": "ARWallet",
+          "type": "TEXT",
+          "w": 156,
+          "h": 50
+        },
+        {
+          "id": "29006:8533",
+          "name": "Frame 1",
+          "type": "FRAME",
+          "w": 1920,
+          "h": 1080
+        }
+      ]
+    },
+    {
+      "page_id": "1:6405",
+      "page_name": "卖出业务",
+      "scan_status": "partial_top_list",
+      "node_read_complete": false,
+      "top_listed": 14,
+      "top_total": 116,
+      "client_frames_in_list": 14,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "顶层共 116 个。本轮工具返回了前 40 个，清单里只保留客户端画面和失败节点所在行，其余顶层未写入。",
+      "frames": [
+        {
+          "id": "1:6650",
+          "name": "卖出",
+          "type": "FRAME",
+          "w": 390,
+          "h": 2143
+        },
+        {
+          "id": "1:6910",
+          "name": "卖出_无法卖出",
+          "type": "FRAME",
+          "w": 390,
+          "h": 2143
+        },
+        {
+          "id": "16181:7754",
+          "name": "卖出_奖励卡",
+          "type": "FRAME",
+          "w": 390,
+          "h": 902
+        },
+        {
+          "id": "16183:10830",
+          "name": "卖出_奖励卡_提示弹窗",
+          "type": "FRAME",
+          "w": 390,
+          "h": 902
+        },
+        {
+          "id": "5220:17776",
+          "name": "卖出_输入金额",
+          "type": "FRAME",
+          "w": 390,
+          "h": 884
+        },
+        {
+          "id": "10026:1575",
+          "name": "Frame 4535059",
+          "type": "FRAME",
+          "w": 360,
+          "h": 166
+        },
+        {
+          "id": "10855:7586",
+          "name": "卖出_KYC链接正常",
+          "type": "FRAME",
+          "w": 390,
+          "h": 1134
+        },
+        {
+          "id": "15099:5161",
+          "name": "UPI被禁用",
+          "type": "FRAME",
+          "w": 390,
+          "h": 1002
+        },
+        {
+          "id": "10860:8067",
+          "name": "卖出_输入卖出金额_拆单方式2",
+          "type": "FRAME",
+          "w": 390,
+          "h": 1239
+        },
+        {
+          "id": "7163:1819",
+          "name": "卖出_添加收款账户_带出账户号",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "1:9019",
+          "name": "卖出_取消订单",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "1:9093",
+          "name": "卖出_取消订单",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "4455:3496",
+          "name": "卖出_短信验证",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "21049:11347",
+          "name": "Frame 1420070559",
+          "type": "FRAME",
+          "w": 360,
+          "h": 64
+        }
+      ]
+    },
+    {
+      "page_id": "29014:57123",
+      "page_name": "交易申诉",
+      "scan_status": "top_listed",
+      "node_read_complete": true,
+      "top_listed": 4,
+      "top_total": 4,
+      "client_frames_in_list": 3,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "4 个顶层都已列出。MobiKwik、Super.money、airtel 已写入。没有逐屏截图点数。",
+      "frames": [
+        {
+          "id": "29014:57124",
+          "name": "1",
+          "type": "FRAME",
+          "w": 815,
+          "h": 844
+        },
+        {
+          "id": "29014:57131",
+          "name": "充值申诉_1",
+          "type": "FRAME",
+          "w": 390,
+          "h": 914
+        },
+        {
+          "id": "29014:57244",
+          "name": "充值申诉_2",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        },
+        {
+          "id": "29014:57268",
+          "name": "KYC断链重新提交",
+          "type": "FRAME",
+          "w": 390,
+          "h": 844
+        }
+      ]
+    },
+    {
+      "page_id": "19139:7881",
+      "page_name": "运营推广落地页",
+      "scan_status": "top_listed",
+      "node_read_complete": false,
+      "top_listed": 14,
+      "top_total": 18,
+      "client_frames_in_list": 14,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "顶层共 18 个。名单只写入宽 390 或 1024 的客户端画面，导航条没有逐条写入。早先深层扫描未截断，视觉数量仍待核实。",
+      "frames": [
+        {
+          "id": "19139:9939",
+          "name": "Legitimate Mobile Side Hustles——New",
+          "type": "FRAME",
+          "w": 390,
+          "h": 2690
+        },
+        {
+          "id": "19681:4295",
+          "name": "Affiliate Center_1",
+          "type": "FRAME",
+          "w": 390,
+          "h": 2500
+        },
+        {
+          "id": "19833:2103",
+          "name": "AR Wallet落地页首页",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 3644
+        },
+        {
+          "id": "19833:2402",
+          "name": "常见问题",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 2246
+        },
+        {
+          "id": "19833:2548",
+          "name": "新手教程",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 2180
+        },
+        {
+          "id": "19833:2729",
+          "name": "首页",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 1740
+        },
+        {
+          "id": "19833:2856",
+          "name": "加入交流群",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 1740
+        },
+        {
+          "id": "19833:2983",
+          "name": "下载页",
+          "type": "FRAME",
+          "w": 1024,
+          "h": 1740
+        },
+        {
+          "id": "20348:1426",
+          "name": "AR Wallet落地页首页",
+          "type": "FRAME",
+          "w": 390,
+          "h": 1430
+        },
+        {
+          "id": "20348:1723",
+          "name": "常见问题",
+          "type": "FRAME",
+          "w": 390,
+          "h": 850
+        },
+        {
+          "id": "20348:1870",
+          "name": "新手教程",
+          "type": "FRAME",
+          "w": 390,
+          "h": 840
+        },
+        {
+          "id": "20348:2040",
+          "name": "首页",
+          "type": "FRAME",
+          "w": 390,
+          "h": 700
+        },
+        {
+          "id": "20348:2165",
+          "name": "加入交流群",
+          "type": "FRAME",
+          "w": 390,
+          "h": 700
+        },
+        {
+          "id": "20348:2290",
+          "name": "加入交流群",
+          "type": "FRAME",
+          "w": 390,
+          "h": 700
+        }
+      ]
+    },
+    {
+      "page_id": "1:424",
+      "page_name": "买入业务",
+      "scan_status": "top_listed_interior_incomplete",
+      "node_read_complete": true,
+      "top_listed": 18,
+      "top_total": 18,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "顶层 18 个，多数是导航组件。名称查找在 20000 个节点后截断。24px App_icon 已补存。",
+      "frames": [
+        {
+          "id": "12331:3047",
+          "name": "老版本备份",
+          "type": "SECTION",
+          "w": 4541,
+          "h": 4050
+        },
+        {
+          "id": "14033:2592",
+          "name": "8.23 解除禁用功能",
+          "type": "SECTION",
+          "w": 425,
+          "h": 52
+        }
+      ]
+    },
+    {
+      "page_id": "1:6407",
+      "page_name": "我的",
+      "scan_status": "interior_incomplete",
+      "node_read_complete": true,
+      "top_listed": 2,
+      "top_total": 2,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "顶层是两个备份 Section。早先名称扫描在 8001 个节点截断。icon 组 2461:2242 确认是隐藏组。",
+      "frames": [
+        {
+          "id": "12432:18344",
+          "name": "老版本备份",
+          "type": "SECTION",
+          "w": 6793,
+          "h": 2497
+        },
+        {
+          "id": "12331:5287",
+          "name": "老版本备份",
+          "type": "SECTION",
+          "w": 10746,
+          "h": 6720
+        }
+      ]
+    },
+    {
+      "page_id": "2240:4771",
+      "page_name": "教程引导",
+      "scan_status": "interior_incomplete",
+      "node_read_complete": true,
+      "top_listed": 2,
+      "top_total": 2,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "当前顶层是两个同名 Section。早先深层遍历三次触顶，不能当成内部已扫完。",
+      "frames": [
+        {
+          "id": "29014:7384",
+          "name": "新蚂蚁会员邀请步骤引导",
+          "type": "SECTION",
+          "w": 4576,
+          "h": 10898
+        },
+        {
+          "id": "29014:28624",
+          "name": "新蚂蚁会员邀请步骤引导",
+          "type": "SECTION",
+          "w": 5996,
+          "h": 10898
+        }
+      ]
+    },
+    {
+      "page_id": "23880:22185",
+      "page_name": "买入业务-内挂智能抢单",
+      "scan_status": "not_refreshed",
+      "node_read_complete": false,
+      "top_listed": 0,
+      "top_total": null,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "本轮没有重新读取顶层。早先深层遍历 7221 个节点且未截断。横版 PhonePe、MobiKwik、Freecharge 和空状态 SVG 仍未落盘。",
+      "frames": []
+    },
+    {
+      "page_id": "924:1655",
+      "page_name": "收银台",
+      "scan_status": "not_refreshed",
+      "node_read_complete": false,
+      "top_listed": 0,
+      "top_total": null,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "本轮没有重新读取顶层。早先只定点导出了 PhonePe 和 Paytm。",
+      "frames": []
+    },
+    {
+      "page_id": "1:6406",
+      "page_name": "订单流转",
+      "scan_status": "not_refreshed",
+      "node_read_complete": false,
+      "top_listed": 0,
+      "top_total": null,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "本轮没有重新读取顶层。早先深层遍历 8019 个节点且未截断。隐藏状态图标仍然导出失败。",
+      "frames": []
+    },
+    {
+      "page_id": "18638:12209",
+      "page_name": "自动交易",
+      "scan_status": "not_refreshed",
+      "node_read_complete": false,
+      "top_listed": 0,
+      "top_total": null,
+      "client_frames_in_list": 0,
+      "visual_asset_count": null,
+      "visual_status": "待核实",
+      "matched_asset_count": null,
+      "new_asset_count": null,
+      "existing_asset_count": null,
+      "unlocated_count": null,
+      "export_fail_count": null,
+      "excluded_count": null,
+      "note": "本轮没有重新读取顶层。早先深层遍历 4344 个节点且未截断。空状态 SVG 仍未落盘。",
+      "frames": []
+    }
+  ],
+  "failures": [
+    {
+      "node_id": "21049:11361",
+      "name": "MobiKwik_logo 2",
+      "page": "卖出业务",
+      "reason": "节点自身可见，父级 logo 21049:11349 不可见，导出报没有可见图层。可见副本已存 bank-mobikwik.svg。"
+    },
+    {
+      "node_id": "2461:2242",
+      "name": "icon",
+      "page": "我的",
+      "reason": "组本身 visible 为 false。子层有矩形、矢量和布尔运算，但组被隐藏，导出失败。没有生成替代文件。"
+    },
+    {
+      "node_id": "14899:6727",
+      "name": "icon_卖出功能封禁",
+      "page": "订单流转",
+      "reason": "上一轮节点可见但仍导出失败。本轮未重试成功，未造假。"
+    },
+    {
+      "node_id": "19833:2393",
+      "name": "AR Wallet",
+      "page": "运营推广落地页",
+      "reason": "上一轮导出失败，没有可见图层。"
+    }
+  ],
+  "qr_decision": {
+    "node_id": "14607:4069",
+    "name": "icon_QR码",
+    "result": "保留为通用图标。节点是 Frame，里面 1 个矢量、0 个图片填充，不是带交易信息的支付码。文件 business-qr.svg 已在库中。"
+  }
+}

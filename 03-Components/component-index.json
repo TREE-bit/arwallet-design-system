@@ -1,0 +1,2097 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "status": "audit-only",
+    "confirmation": "unconfirmed",
+    "auditedAt": "2026-11-26",
+    "figmaFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "standardizedCount": 0,
+    "componentSetCountInSample": 0,
+    "reason": "买入 UPI 这一行补了按钮和提示候选项。已标准化组件仍是 0。0 到 3 按走查不再重扫，2.2 教程引导不入库。",
+    "notCounted": "首页深层遍历在 2500 个节点处截断，而且遍历顺序没有覆盖到顶层组件，所以那次遍历的 0 不能当成组件数量。实例数量同样没有全文件统计。"
+  },
+  "nativeComponents": [
+    {
+      "name": "StatusBar_white",
+      "id": "1:515",
+      "key": "a9be84ee6114c58119540ca541dc474e29add86e",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "StatusBar_black",
+      "id": "1:525",
+      "key": "d5c332cb28966ffd23c1854ea091d95f67fd8cf7",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_buy1",
+      "id": "1:5632",
+      "key": "696e5a60a51ac26e7216327f9c007d0117188042",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_buy2",
+      "id": "1:5637",
+      "key": "55b03a7bef8f167f728fb03668ff48c387d80643",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_home2",
+      "id": "2240:5094",
+      "key": "7f1dead5a7d4fdbf17b09ed714f8800d6182e316",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_home1",
+      "id": "2240:5112",
+      "key": "5b6f85b0e144256fc461409ba403b8bbe3d10117",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_sell1",
+      "id": "1:5642",
+      "key": "15ea2a075d57c230745354cc06dd89ab473f7350",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_sell2",
+      "id": "1:5647",
+      "key": "9dd6918563eeeeab1c97bf8a7e8cea283022f79f",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_order1",
+      "id": "1:5652",
+      "key": "1c48300a0b4be3fbe8e6689144f0a8f677cb3e94",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_order2",
+      "id": "1:5658",
+      "key": "f1078b79784330a45bd15da445ee7977c7eca310",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_my1",
+      "id": "1:5664",
+      "key": "e8bc88eed21e7743cee9a819421d16f2f1ecdf14",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_my2",
+      "id": "1:5672",
+      "key": "480e53bef4ccfcad2d5a9632c1d233fdae7ba1f3",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_task1",
+      "id": "1243:5980",
+      "key": "463be0074c98fb8b33eb415bc28e7b6faa293e7d",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "icon_task2",
+      "id": "1243:5981",
+      "key": "a255bf9b7719ff35d93329f8f42d79575ddc3f73",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    },
+    {
+      "name": "VIP Bonus Alert!",
+      "id": "14328:3863",
+      "key": "b9df3029c372c12d8ad8c30ecd3c502f8c25fe9b",
+      "page": "2 首页",
+      "type": "COMPONENT",
+      "variants": null
+    }
+  ],
+  "instances": {
+    "count": null,
+    "note": "没有做全文件实例统计。首页一次有上限的遍历在截断前看到 15 个实例，这个数字不能当成总数。"
+  },
+  "candidates": {
+    "count": 49,
+    "note": "买入 9 个仍按当时记录保留。启动页图形组 8 个不是控件，控件 9 个。登录注册控件 9 个。首页新增控件 4 个。首页 15 个原生组件仍在 nativeComponents。Key 为空。不是全文件总数。 首页再补弹框外壳、订单进度条和扫码按钮。 卖出业务新增 7 个候选项。",
+    "items": [
+      {
+        "id": "cmp-26384-17449",
+        "name": "logo",
+        "type": "FRAME",
+        "figma_node_id": "26384:17449",
+        "key": "",
+        "page_id": "23880:22185",
+        "parent_id": "scr-0263",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。PhonePe 横版字标画板。读到的是 Frame，Key 留空。不是全页组件扫描。"
+      },
+      {
+        "id": "cmp-26384-17443",
+        "name": "logo",
+        "type": "FRAME",
+        "figma_node_id": "26384:17443",
+        "key": "",
+        "page_id": "23880:22185",
+        "parent_id": "scr-0263",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。MobiKwik 横版字标画板。读到的是 Frame，Key 留空。"
+      },
+      {
+        "id": "cmp-26384-17496",
+        "name": "logo",
+        "type": "FRAME",
+        "figma_node_id": "26384:17496",
+        "key": "",
+        "page_id": "23880:22185",
+        "parent_id": "scr-0263",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。Freecharge 横版字标画板。读到的是 Frame，Key 留空。隐藏子层 layer1 未导出。"
+      },
+      {
+        "id": "cmp-18638-12270",
+        "name": "logo",
+        "type": "FRAME",
+        "figma_node_id": "18638:12270",
+        "key": "",
+        "page_id": "18638:12209",
+        "parent_id": "scr-0391",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。与 PhonePe 横版字标同一图形，没有另存文件。Key 留空。"
+      },
+      {
+        "id": "cmp-18638-13033",
+        "name": "空状态",
+        "type": "GROUP",
+        "figma_node_id": "18638:13033",
+        "key": "",
+        "page_id": "18638:12209",
+        "parent_id": "scr-0394",
+        "width": 219,
+        "height": 162,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。空状态组，不是 COMPONENT。Key 留空。"
+      },
+      {
+        "id": "cmp-17020-5926",
+        "name": "Paytm_logo",
+        "type": "FRAME",
+        "figma_node_id": "17020:5926",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 12,
+        "height": 12,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。12×12 Paytm 画板。与历史 bank-paytm 不是同一图形。Key 留空。"
+      },
+      {
+        "id": "cmp-21049-10286",
+        "name": "Paytm_logo",
+        "type": "FRAME",
+        "figma_node_id": "21049:10286",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。120×32 Paytm 画板。与历史 bank-paytm 不是同一图形。Key 留空。"
+      },
+      {
+        "id": "cmp-17020-5933",
+        "name": "PhonePe_logo",
+        "type": "FRAME",
+        "figma_node_id": "17020:5933",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 12,
+        "height": 12,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。12×12 PhonePe 画板。与历史 bank-phonepe 不是同一图形。Key 留空。"
+      },
+      {
+        "id": "cmp-21049-10353",
+        "name": "Phone Pe_logo",
+        "type": "FRAME",
+        "figma_node_id": "21049:10353",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 120,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。与 PhonePe 横版字标同一图形，没有另存文件。Key 留空。"
+      },
+      {
+        "id": "cmp-8275-5497",
+        "name": "金币1",
+        "type": "GROUP",
+        "figma_node_id": "8275:5497",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 95,
+        "height": 124,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。蒙版组合，灰色矩形加金币矢量。没有整组导出。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-8275-5513",
+        "name": "金币2",
+        "type": "GROUP",
+        "figma_node_id": "8275:5513",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 100,
+        "height": 250,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。蒙版组合，灰色矩形加金币叠。没有整组导出。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-4683-1159",
+        "name": "Frame 4",
+        "type": "FRAME",
+        "figma_node_id": "4683:1159",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 121,
+        "height": 140,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。内含与单枚金币同一图形的组。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-4683-1136",
+        "name": "Frame 3",
+        "type": "FRAME",
+        "figma_node_id": "4683:1136",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 391,
+        "height": 382,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。内含未蒙版的大金币组，本轮没有另存。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-7602-4362",
+        "name": "Frame 1420069917",
+        "type": "FRAME",
+        "figma_node_id": "7602:4362",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 109,
+        "height": 167,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。内含与单枚金币同一图形的组。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-7602-4376",
+        "name": "Frame 1420069918",
+        "type": "FRAME",
+        "figma_node_id": "7602:4376",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 475,
+        "height": 354,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。内含未蒙版的大金币组，本轮没有另存。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-7597-4053",
+        "name": "Group 1420069916",
+        "type": "GROUP",
+        "figma_node_id": "7597:4053",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "",
+        "width": 905,
+        "height": 715,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。四个子组组成的立体场景，不是 COMPONENT。图形已入库为 illustration-login-scene。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-8267-5411",
+        "name": "下载",
+        "type": "FRAME",
+        "figma_node_id": "8267:5411",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0018",
+        "width": 342,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。下载页按钮。图标是素材 nav-download。Key 留空。与登录按钮的圆角和文字颜色不同，不并成一个。",
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "图标 + 居中文字",
+        "style": "342×48，圆角 60，填充 #ffc40b，横向居中，间距 8，内边距 0。文字「下载」16 PingFang SC Medium #1f262f。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "nav-download"
+        ],
+        "instances": []
+      },
+      {
+        "id": "cmp-8267-5432",
+        "name": "logo",
+        "type": "GROUP",
+        "figma_node_id": "8267:5432",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0018",
+        "width": 120,
+        "height": 120,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "note": "候选项。渐变底加金色 A。A 与 logo-app-120 是同一图形，没有另存。Key 留空。按新规范这是素材组合，不是按钮、输入框、下拉或复选框。记录保留，组件入口不再展示。",
+        "control": false
+      },
+      {
+        "id": "cmp-7567-24",
+        "name": "登录",
+        "type": "FRAME",
+        "figma_node_id": "7567:24",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0015",
+        "width": 353,
+        "height": 49,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "353×49，圆角 7，填充 #ffc40b，横向居中，间距 10，内边距上 7、右 145、下 7、左 145。文字「登录」20 PingFang SC Semibold #ffffff。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。登录背景上的登录按钮。Key 留空。与下载按钮、后台登录按钮的尺寸和文字样式不同，不并成一个。"
+      },
+      {
+        "id": "cmp-7750-24",
+        "name": "登 录",
+        "type": "FRAME",
+        "figma_node_id": "7750:24",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0016",
+        "width": 438,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "438×48，圆角 8，填充 #ffc40b，横向居中，间距 10，内边距上 7、右 145、下 7、左 145。文字「登 录」16 PingFang SC Regular #ffffff。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "7750:1847",
+            "screen_id": "scr-0017",
+            "label": "总后台",
+            "style_note": "读到同一尺寸、圆角、填充和文字"
+          }
+        ],
+        "note": "候选项。商户后台登录按钮。总后台是同一结构的实例。Key 留空。"
+      },
+      {
+        "id": "cmp-7567-19",
+        "name": "请输入AR Wallet ID",
+        "type": "FRAME",
+        "figma_node_id": "7567:19",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0015",
+        "width": 353,
+        "height": 49,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "白底框 + 占位文字",
+        "style": "353×49，圆角 7，填充 #ffffff，横向，间距 10，内边距上 14、右 15、下 14、左 15。文字「请输入AR Wallet ID」16 PingFang SC Medium #cfd6e0。描边颜色未读到。",
+        "states": "只读到占位这一态。悬停、聚焦、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。登录背景上的一个输入框。Key 留空。"
+      },
+      {
+        "id": "cmp-7750-27",
+        "name": "用户名",
+        "type": "GROUP",
+        "figma_node_id": "7750:27",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0016",
+        "width": 438,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "矩形 + 占位文字。组没有自动布局，不记内边距。",
+        "style": "438×48，圆角 8，填充 #ffffff。文字 16 PingFang SC Regular #999999。商户后台三份矩形的描边颜色未读到。",
+        "states": "只读到占位这一态。悬停、聚焦、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "7750:30",
+            "screen_id": "scr-0016",
+            "label": "密码",
+            "style_note": "商户后台，描边颜色未读到"
+          },
+          {
+            "figma_node_id": "7750:33",
+            "screen_id": "scr-0016",
+            "label": "Google 验证码",
+            "style_note": "商户后台，描边颜色未读到"
+          },
+          {
+            "figma_node_id": "7750:1850",
+            "screen_id": "scr-0017",
+            "label": "用户名",
+            "style_note": "总后台矩形描边 #e6e6e6，内侧，粗细 2"
+          },
+          {
+            "figma_node_id": "7750:1853",
+            "screen_id": "scr-0017",
+            "label": "密码",
+            "style_note": "总后台矩形描边 #e6e6e6，内侧，粗细 2"
+          },
+          {
+            "figma_node_id": "7750:1856",
+            "screen_id": "scr-0017",
+            "label": "Google 验证码",
+            "style_note": "总后台矩形描边 #e6e6e6，内侧，粗细 2"
+          }
+        ],
+        "note": "候选项。后台输入框。用户名、密码、验证码是实例，不各建组件。总后台多读到描边，写在实例上。Key 留空。"
+      },
+      {
+        "id": "cmp-7567-15",
+        "name": "简体中文",
+        "type": "FRAME",
+        "figma_node_id": "7567:15",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0015",
+        "width": 184,
+        "height": 46,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "下拉选择器",
+        "structure": "图标 + 文字 + 三角",
+        "style": "184×46，圆角 80，填充 #ffffff，横向，交叉轴居中，间距 8，内边距上 11、右 32、下 11、左 32。文字「简体中文」16 PingFang SC Regular #29303a。描边颜色未读到。",
+        "states": "只读到收起这一态。展开、悬停、禁用未读到。",
+        "asset_ids": [
+          "general-language",
+          "general-caret-down"
+        ],
+        "instances": [],
+        "note": "候选项。登录背景的语言选择。Key 留空。和后台语言选择的结构不同，不并成一个。"
+      },
+      {
+        "id": "cmp-7750-39",
+        "name": "语言",
+        "type": "GROUP",
+        "figma_node_id": "7750:39",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0016",
+        "width": 438,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "下拉选择器",
+        "structure": "文字标签 + 选择框 + 框内文字 + 箭头",
+        "style": "整组 438×48。标签「语言：」16 PingFang SC Regular #333333。选择框 386×48，圆角 8，填充 #ffffff。框内文字「中文」16 PingFang SC Regular #333333。箭头填充 #999999。商户后台选择框描边颜色未读到。",
+        "states": "只读到收起这一态。展开、悬停、禁用未读到。",
+        "asset_ids": [
+          "general-chevron-down"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "7750:1862",
+            "screen_id": "scr-0017",
+            "label": "总后台",
+            "style_note": "选择框描边 #e6e6e6，内侧，粗细 2"
+          }
+        ],
+        "note": "候选项。后台语言选择。总后台是实例，描边差异写在实例上。Key 留空。"
+      },
+      {
+        "id": "cmp-7567-40",
+        "name": "隐私条款",
+        "type": "FRAME",
+        "figma_node_id": "7567:40",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0015",
+        "width": 283,
+        "height": 18,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "复选框",
+        "structure": "方块 + 文字。没有对勾。",
+        "style": "横向，间距 9，内边距 0。方块 14×14，圆角 4，描边 #1f262f，内侧，粗细 1，填充未读到。文字 13 PingFang SC Regular：「我已阅读并同意」#1f262f，「《隐私条款》」#63a1ff，「和」#1f262f，「《用户协议》」#63a1ff。",
+        "states": "只读到未勾选这一态。勾选、悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。登录背景的协议复选框。没有读到对勾图标。Key 留空。"
+      },
+      {
+        "id": "cmp-7750-36",
+        "name": "记住账号",
+        "type": "GROUP",
+        "figma_node_id": "7750:36",
+        "key": "",
+        "page_id": "1:52",
+        "parent_id": "scr-0016",
+        "width": 89,
+        "height": 22,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "复选框",
+        "structure": "文字 + 方块。没有对勾。",
+        "style": "整组 89×22。文字「记住账号」16 PingFang SC Regular #333333。方块 18×18，圆角 4，填充 #ffffff，描边 #e6e6e6，内侧，粗细 2。",
+        "states": "只读到未勾选这一态。勾选、悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "7750:1859",
+            "screen_id": "scr-0017",
+            "label": "总后台",
+            "style_note": "读到同一尺寸、填充和描边"
+          }
+        ],
+        "note": "候选项。后台记住账号。没有读到对勾图标。总后台是实例。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18131",
+        "name": "登录",
+        "type": "FRAME",
+        "figma_node_id": "29056:18131",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0021",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "340×48，圆角 4，填充 #ffc40b，纵向，主轴和交叉轴都居中，内边距 0。文字「登录」16 PingFang SC Medium #403510。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29056:18265",
+            "screen_id": "scr-0022",
+            "label": "确认",
+            "style_note": "尺寸、圆角、填充已核对。文字颜色未逐条再读"
+          },
+          {
+            "figma_node_id": "29056:18422",
+            "screen_id": "scr-0023",
+            "label": "注册",
+            "style_note": "尺寸、圆角、填充已核对。文字颜色未逐条再读"
+          },
+          {
+            "figma_node_id": "29056:18638",
+            "screen_id": "scr-0024",
+            "label": "确认",
+            "style_note": "尺寸、圆角、填充已核对。文字颜色未逐条再读"
+          }
+        ],
+        "note": "候选项。登录页主按钮。与安全验证按钮的圆角和文字颜色不同，不并成一个。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18133",
+        "name": "联系客服",
+        "type": "FRAME",
+        "figma_node_id": "29056:18133",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0021",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "340×48，圆角 4，填充 #ebecf0，纵向居中，内边距 0。文字「联系客服」16 PingFang SC Medium #373d42。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。登录页次按钮。只在登录页读到。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18830",
+        "name": "安全验证登录",
+        "type": "FRAME",
+        "figma_node_id": "29056:18830",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0025",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "340×48，圆角 8，填充 #ffc40b，纵向居中，间距 8，内边距 0。文字「登录」16 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。安全验证页的登录按钮。圆角 8、文字 #1f262f，和登录页圆角 4、文字 #403510 不同。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18295",
+        "name": "发送",
+        "type": "FRAME",
+        "figma_node_id": "29056:18295",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0022",
+        "width": 60,
+        "height": 32,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "60×32，圆角 21，填充 #fac10c，纵向居中，内边距上 8、右 16、下 8、左 16。文字「发送」14 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29056:18464",
+            "screen_id": "scr-0023",
+            "label": "注册",
+            "style_note": "尺寸、圆角、填充已核对"
+          },
+          {
+            "figma_node_id": "29056:18668",
+            "screen_id": "scr-0024",
+            "label": "切换语言",
+            "style_note": "尺寸、圆角、填充已核对"
+          },
+          {
+            "figma_node_id": "29056:18825",
+            "screen_id": "scr-0025",
+            "label": "安全验证",
+            "style_note": "尺寸、圆角、填充已核对"
+          }
+        ],
+        "note": "候选项。验证码框尾部的发送按钮。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18139",
+        "name": "请输入密码",
+        "type": "FRAME",
+        "figma_node_id": "29056:18139",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0021",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "占位文字 + 尾部图标",
+        "style": "340×48，圆角 4，填充 #f5f5f5，横向两端对齐，间距 208，内边距上 11、右 12、下 11、左 12。占位 16 PingFang SC Medium #99a1ac。",
+        "states": "只读到占位这一态。聚焦、禁用未读到。",
+        "asset_ids": [
+          "general-eye"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29056:18271",
+            "screen_id": "scr-0022",
+            "label": "请输入新登录密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18282",
+            "screen_id": "scr-0022",
+            "label": "请输入确认密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18428",
+            "screen_id": "scr-0023",
+            "label": "请输入登录密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18439",
+            "screen_id": "scr-0023",
+            "label": "请输入确认密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18451",
+            "screen_id": "scr-0023",
+            "label": "请输入邀请码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18644",
+            "screen_id": "scr-0024",
+            "label": "请输入新登录密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18655",
+            "screen_id": "scr-0024",
+            "label": "请输入确认密码",
+            "style_note": "同一尺寸、圆角和填充"
+          }
+        ],
+        "note": "候选项。带眼睛图标的输入框。密码、确认密码和邀请码是实例。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18150",
+        "name": "请输入手机号码",
+        "type": "FRAME",
+        "figma_node_id": "29056:18150",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0021",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "国旗 + 区号 + 占位文字",
+        "style": "340×48，圆角 4，填充 #f5f5f5，横向，间距 12，内边距上 8、右 12、下 8、左 12。区号「+91」16 PingFang SC Medium #1f262f。占位 16 PingFang SC Medium #99a1ac。",
+        "states": "只读到占位这一态。聚焦、禁用未读到。",
+        "asset_ids": [
+          "general-flag-india"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29056:18297",
+            "screen_id": "scr-0022",
+            "label": "忘记密码",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18466",
+            "screen_id": "scr-0023",
+            "label": "注册",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18670",
+            "screen_id": "scr-0024",
+            "label": "切换语言",
+            "style_note": "同一尺寸、圆角和填充"
+          }
+        ],
+        "note": "候选项。手机号输入框。忘记密码、注册、切换语言是实例。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18293",
+        "name": "请输入验证码",
+        "type": "FRAME",
+        "figma_node_id": "29056:18293",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0022",
+        "width": 340,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "占位文字 + 发送按钮",
+        "style": "340×48，圆角 4，填充 #f5f5f5，横向两端对齐，间距 208，内边距上 11、右 12、下 11、左 12。占位 16 PingFang SC Medium #99a1ac。",
+        "states": "只读到占位这一态。聚焦、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29056:18462",
+            "screen_id": "scr-0023",
+            "label": "注册",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18666",
+            "screen_id": "scr-0024",
+            "label": "切换语言",
+            "style_note": "同一尺寸、圆角和填充"
+          },
+          {
+            "figma_node_id": "29056:18823",
+            "screen_id": "scr-0025",
+            "label": "安全验证",
+            "style_note": "占位文字是 Roboto Regular，其余页面是 PingFang SC Medium"
+          }
+        ],
+        "note": "候选项。验证码输入框。尾部是发送按钮候选项。安全验证这一份占位字体不同，写在实例上。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18413",
+        "name": "用户协议",
+        "type": "FRAME",
+        "figma_node_id": "29056:18413",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0022",
+        "width": 234,
+        "height": 22,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "复选框",
+        "structure": "圆形 + 文字。没有对勾。",
+        "style": "横向，间距 8，内边距 0。圆 18×18，填充 #ffffff，描边 #c1c9d4，粗细 1.125。文字 16 PingFang SC Regular：「我已同意并阅读」#1f262f，「《用户协议》」#f5ba00。",
+        "states": "只读到未勾选这一态。勾选、悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29056:18582",
+            "screen_id": "scr-0023",
+            "label": "注册",
+            "style_note": "尺寸和结构已核对，文字分段颜色未再读"
+          },
+          {
+            "figma_node_id": "29056:18786",
+            "screen_id": "scr-0024",
+            "label": "切换语言",
+            "style_note": "尺寸和结构已核对，文字分段颜色未再读"
+          }
+        ],
+        "note": "候选项。协议复选框。没有读到对勾。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-18254",
+        "name": "中文",
+        "type": "FRAME",
+        "figma_node_id": "29056:18254",
+        "key": "",
+        "page_id": "29056:6919",
+        "parent_id": "scr-0021",
+        "width": 60,
+        "height": 28,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "下拉选择器",
+        "structure": "图标 + 文字",
+        "style": "60×28，横向，间距 4，内边距 0。没有读到选择框填充。文字「中文」14 PingFang SC Regular #1f262f。",
+        "states": "收起读到这一份。展开读到切换语言页 29056:18789：白底 100×118，English、हिन्दी、中文，14 PingFang SC Regular #1f262f，分割线 #e6e7eb。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-globe"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29056:18407",
+            "screen_id": "scr-0022",
+            "label": "忘记密码标题栏",
+            "style_note": "同一尺寸"
+          },
+          {
+            "figma_node_id": "29056:18576",
+            "screen_id": "scr-0023",
+            "label": "注册标题栏",
+            "style_note": "同一尺寸"
+          },
+          {
+            "figma_node_id": "29056:18780",
+            "screen_id": "scr-0024",
+            "label": "切换语言标题栏",
+            "style_note": "同一尺寸"
+          },
+          {
+            "figma_node_id": "29056:18805",
+            "screen_id": "scr-0025",
+            "label": "安全验证标题栏",
+            "style_note": "同一尺寸"
+          }
+        ],
+        "note": "候选项。语言选择。展开列表是切换语言页上的同级组，不是这个框的子层。Key 留空。"
+      },
+      {
+        "id": "cmp-29044-5065",
+        "name": "关闭",
+        "type": "FRAME",
+        "figma_node_id": "29044:5065",
+        "key": "",
+        "page_id": "29044:4234",
+        "parent_id": "scr-0043",
+        "width": 143,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "143×48，圆角 8，填充 #f5f6fa，描边 #e6e7eb，粗细 1，纵向居中，内边距 0。文字「关闭」14 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。公告弹窗的次按钮。Key 留空。"
+      },
+      {
+        "id": "cmp-29044-5067",
+        "name": "去买入",
+        "type": "FRAME",
+        "figma_node_id": "29044:5067",
+        "key": "",
+        "page_id": "29044:4234",
+        "parent_id": "scr-0043",
+        "width": 143,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "143×48，圆角 8，填充 #ffc40b，纵向居中，内边距 0。文字「去买入」14 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。公告弹窗的主按钮。和登录页圆角 4 的主按钮不同。Key 留空。"
+      },
+      {
+        "id": "cmp-29056-20120",
+        "name": "To handle",
+        "type": "FRAME",
+        "figma_node_id": "29056:20120",
+        "key": "",
+        "page_id": "29044:4234",
+        "parent_id": "scr-0054",
+        "width": 298,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "298×48，圆角 8，填充 #ee4d4d，纵向居中，内边距 0。文字「To handle」14 Roboto Medium #ffffff。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-warning"
+        ],
+        "instances": [],
+        "note": "候选项。警告弹层里的处理按钮。Key 留空。"
+      },
+      {
+        "id": "cmp-29044-4641",
+        "name": "添加到桌面",
+        "type": "GROUP",
+        "figma_node_id": "29044:4641",
+        "key": "",
+        "page_id": "29044:4234",
+        "parent_id": "scr-0042",
+        "width": 200,
+        "height": 44,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "图标 + 文字 + 关闭",
+        "style": "200×44。底是圆角 40 的 #ffc40b。文字「添加到桌面」14 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-close-circle"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29044:5035",
+            "screen_id": "scr-0043",
+            "label": "公告弹窗",
+            "style_note": "同一 200×44 结构"
+          },
+          {
+            "figma_node_id": "29056:20072",
+            "screen_id": "scr-0054",
+            "label": "首页_无订单",
+            "style_note": "同一 200×44 结构"
+          },
+          {
+            "figma_node_id": "29044:7067",
+            "screen_id": "scr-0047",
+            "label": "Add to desktop",
+            "style_note": "宽 225，文案为英文"
+          },
+          {
+            "figma_node_id": "29044:7369",
+            "screen_id": "scr-0048",
+            "label": "Add to desktop",
+            "style_note": "宽 225，文案为英文"
+          },
+          {
+            "figma_node_id": "29044:7855",
+            "screen_id": "scr-0049",
+            "label": "Add to desktop",
+            "style_note": "宽 225，文案为英文"
+          }
+        ],
+        "note": "候选项。添加到桌面是 Group，不是 COMPONENT。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "29044:4234",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-29044-5058",
+        "name": "公告弹窗",
+        "type": "FRAME",
+        "figma_node_id": "29044:5058",
+        "parent_id": "scr-0043",
+        "width": 330,
+        "height": 388,
+        "control_kind": "弹框",
+        "structure": "渐变标题条 + 正文 + 图片 + 两个按钮",
+        "style": "330×388，圆角 8，填充 #ffffff。标题条 330×48，线性渐变 #fde391 到 #ffc40b。标题「公告弹窗」18 PingFang SC Semibold #1f262f，内边距上 11、右 75、下 11、左 75。",
+        "states": "只读到这一帧。没有读到打开或关闭的过程。",
+        "asset_ids": [
+          "illustration-notice"
+        ],
+        "instances": [],
+        "note": "候选项。外壳单独记录。关闭和去买入仍是各自的按钮候选项。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "29044:4234",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-29044-5280",
+        "name": "订单倒计时",
+        "type": "FRAME",
+        "figma_node_id": "29044:5280",
+        "parent_id": "scr-0044",
+        "width": 336,
+        "height": 20,
+        "control_kind": "进度条",
+        "structure": "底槽 + 色条 + 时间文字",
+        "style": "底槽 336×20，圆角 4。色条 147×20，圆角 4。时间「09:24.635」14 Roboto Regular #1f262f。确认中这一份底槽 #d1f4d5，色条 #2cc660。",
+        "states": "只读到静态一帧。没有读到动画。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29044:5250",
+            "screen_id": "scr-0044",
+            "label": "待支付",
+            "style_note": "底槽 #d8e8ff，色条 #63a1ff，宽仍是 147"
+          },
+          {
+            "figma_node_id": "29044:5337",
+            "screen_id": "scr-0044",
+            "label": "匹配中",
+            "style_note": "底槽 #fff5d7，色条 #fac00c，宽仍是 147"
+          }
+        ],
+        "note": "候选项。申诉中的订单行没有这条。147 是这一帧读到的宽度，不是计算出来的进度。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "29044:4234",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-29044-4623",
+        "name": "扫码",
+        "type": "GROUP",
+        "figma_node_id": "29044:4623",
+        "parent_id": "scr-0042",
+        "width": 56,
+        "height": 56,
+        "control_kind": "按钮",
+        "structure": "圆形底 + 二维码图标",
+        "style": "56×56 圆。填充线性渐变 #ffda66 到 #ffc40b。图标 30×30，白色。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "nav-qr"
+        ],
+        "instances": [],
+        "note": "候选项。底栏中间凸起的按钮。旁边四个栏目仍用已有导航图标。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-5220-17846",
+        "name": "卖出",
+        "type": "FRAME",
+        "figma_node_id": "5220:17846",
+        "parent_id": "scr-0148",
+        "width": 360,
+        "height": 48,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "360×48，圆角 8，填充 #ffc40b，纵向居中，内边距 0。文字「卖出」16 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "7098:1629",
+            "screen_id": "scr-0148",
+            "label": "去添加",
+            "style_note": "298×48，圆角 8，填充 #ffc40b，文字 16 Medium #1f262f"
+          },
+          {
+            "figma_node_id": "9633:794",
+            "screen_id": "scr-0163",
+            "label": "我已知悉",
+            "style_note": "298×48，已勾选时可点，填充 #ffc40b"
+          },
+          {
+            "figma_node_id": "29046:30937",
+            "screen_id": "scr-0169",
+            "label": "确认卖出",
+            "style_note": "298×48，填充 #ffc40b，文字 16 Medium #1f262f"
+          }
+        ],
+        "note": "候选项。和首页「去买入」同色同圆角，宽度和字号不同，不并成一个。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-1-6857",
+        "name": "收款信息",
+        "type": "FRAME",
+        "figma_node_id": "1:6857",
+        "parent_id": "scr-0144",
+        "width": 172,
+        "height": 48,
+        "control_kind": "按钮",
+        "structure": "图标 + 文字",
+        "style": "172×48，圆角 8，填充 #f5f6fa，纵向居中。文字「收款信息」14 PingFang SC Medium #1f262f。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-wallet",
+          "business-headset"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "1:6869",
+            "screen_id": "scr-0144",
+            "label": "联系客服",
+            "style_note": "同一尺寸和底色。图标是 business-headset。"
+          }
+        ],
+        "note": "候选项。收款信息用 general-wallet，联系客服用 business-headset。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-1-9071",
+        "name": "取消订单",
+        "type": "FRAME",
+        "figma_node_id": "1:9071",
+        "parent_id": "scr-0152",
+        "width": 360,
+        "height": 48,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "360×48，圆角 8，填充 #e6e7eb。文字「取消订单」14 PingFang SC Medium #f63e3e。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。底是浅灰，文字是红色。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-5220-17798",
+        "name": "请输入数量",
+        "type": "FRAME",
+        "figma_node_id": "5220:17798",
+        "parent_id": "scr-0148",
+        "width": 360,
+        "height": 47,
+        "control_kind": "输入框",
+        "structure": "占位文字 + 单位 + 全部",
+        "style": "360×47，圆角 8，填充 #f5f6fa，横向两端对齐，间距 80，内边距 12。占位「请输入数量」16 PingFang SC Medium #99a1ac。单位 ARB 20 Roboto Bold #5e646a。「全部」16 Medium #f5ba00。",
+        "states": "只读到占位这一态。聚焦、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "5220:17820",
+            "screen_id": "scr-0148",
+            "label": "请输入最小限额",
+            "style_note": "同一圆角和底色，占位文案不同"
+          }
+        ],
+        "note": "候选项。和登录页圆角 4 的输入框不同。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-5220-17807",
+        "name": "UPI账户",
+        "type": "FRAME",
+        "figma_node_id": "5220:17807",
+        "parent_id": "scr-0148",
+        "width": 360,
+        "height": 46,
+        "control_kind": "下拉选择器",
+        "structure": "当前账户文字 + 箭头",
+        "style": "360×46，圆角 8，填充 #f5f6fa，内边距 12。文字「maheboob03@upi」14 Roboto Bold #1f262f。箭头 8×13，填充 #9399a6。",
+        "states": "只读到收起这一态。展开菜单是单独的下拉界面。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。箭头节点 5220:17809 未另存文件。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-9633-796",
+        "name": "我已完全明白",
+        "type": "FRAME",
+        "figma_node_id": "9633:796",
+        "parent_id": "scr-0163",
+        "width": 194,
+        "height": 20,
+        "control_kind": "复选框",
+        "structure": "方块 + 对勾 + 文字",
+        "style": "方块 16×16，圆角 2，填充 #fac10c，对勾白色。文字 14 PingFang SC Regular #1f262f。",
+        "states": "已勾选读到。未勾选界面是 scr-0164，方块样式没有再读。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-check-on"
+        ],
+        "instances": [],
+        "note": "候选项。未勾选时主按钮是 #f5f6fa 加描边，已勾选时主按钮是 #ffc40b。Key 留空。"
+      },
+      {
+        "key": "",
+        "page_id": "1:6405",
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "id": "cmp-7098-1627",
+        "name": "提示",
+        "type": "GROUP",
+        "figma_node_id": "7098:1627",
+        "parent_id": "scr-0148",
+        "width": 330,
+        "height": 299,
+        "control_kind": "弹框",
+        "structure": "标题行 + 说明 + 图标 + 按钮",
+        "style": "330×299，圆角 8，填充 #ffffff。标题「提示」20 PingFang SC Semibold #1f262f，标题行左右内边距 15。没有渐变标题条。",
+        "states": "只读到这一帧。",
+        "asset_ids": [
+          "illustration-upi-card"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "16184:11084",
+            "screen_id": "scr-0162",
+            "label": "KYC添加成功",
+            "style_note": "330×206，圆角 8，白底，内边距上 56、右 16、下 16、左 16"
+          },
+          {
+            "figma_node_id": "29046:30935",
+            "screen_id": "scr-0169",
+            "label": "短信验证",
+            "style_note": "330×324，圆角 8，白底，标题「短信验证」20 Semibold"
+          }
+        ],
+        "note": "候选项。请设置 UPI 这一帧含 illustration-upi-card。KYC 成功和短信验证实例没有这张图。Key 留空。"
+      },
+      {
+        "id": "cmp-14987-7286",
+        "name": "买入",
+        "type": "FRAME",
+        "figma_node_id": "14987:7286",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0185",
+        "width": 88,
+        "height": 36,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "88×36，圆角 24，填充 #ffc40b，纵向，间距 0，内边距上 8、右 30、下 8、左 30。文字「买入」14 PingFang SC Medium #1f262f。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。买入列表上的黄色买入按钮。和金额页主按钮的圆角、字号不同，不并成一个。同列表其余按钮没有逐个再读。Key 留空。"
+      },
+      {
+        "id": "cmp-1-4624",
+        "name": "买入",
+        "type": "FRAME",
+        "figma_node_id": "1:4624",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0190",
+        "width": 360,
+        "height": 46,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "360×46，圆角 8，填充 #ffc40b，纵向，间距 0，内边距上 12、右 16、下 12、左 16。文字「买入」16 PingFang SC Semibold #1f262f。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [],
+        "note": "候选项。输入金额页底部主按钮。Key 留空。"
+      },
+      {
+        "id": "cmp-1-4627",
+        "name": "最小限额",
+        "type": "FRAME",
+        "figma_node_id": "1:4627",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0190",
+        "width": 172,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "居中文字",
+        "style": "172×48，圆角 8，填充 #f5f6fa，纵向，间距 8，内边距 0。文字 14 PingFang SC Medium #1f262f。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "1:4629",
+            "screen_id": "scr-0190",
+            "label": "全部",
+            "style_note": "同尺寸、圆角和填充"
+          }
+        ],
+        "note": "候选项。输入金额页的次按钮。全部是同一结构。Key 留空。"
+      },
+      {
+        "id": "cmp-29046-19826",
+        "name": "Paytm",
+        "type": "FRAME",
+        "figma_node_id": "29046:19826",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0235",
+        "width": 175,
+        "height": 60,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "标志 + 名称 + 说明",
+        "style": "175×60，圆角 8，纵向，间距 2，内边距上 8、右 35、下 8、左 35。说明文字 12 Roboto Regular #000000。卡片底色在内部组，这次没有读到。描边颜色未读到。",
+        "states": "只读到这一态。选中、悬停、禁用未读到。",
+        "asset_ids": [
+          "bank-paytm-card",
+          "illustration-paytm-card-bg"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29046:19842",
+            "screen_id": "scr-0235",
+            "label": "PhonePe",
+            "style_note": "同尺寸和内边距。标志是 bank-phonepe-card，淡印背景是 illustration-phonepe-card-bg"
+          }
+        ],
+        "note": "候选项。支付方式卡片。淡印背景已入库。卡片圆角色底没有另存。Key 留空。"
+      },
+      {
+        "id": "cmp-29046-24386",
+        "name": "KYC确认付款",
+        "type": "FRAME",
+        "figma_node_id": "29046:24386",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0236",
+        "width": 163,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "圆标 + 文字",
+        "style": "163×48，圆角 8，填充 #ffffff 不透明度 0.2，横向，间距 8，内边距 0。文字 14 PingFang SC Medium #ffffff。描边颜色未读到。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-check-circle"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "29046:24393",
+            "screen_id": "scr-0236",
+            "label": "取消订单",
+            "style_note": "同尺寸、圆角和填充。图标是 general-x-circle"
+          }
+        ],
+        "note": "候选项。确认中绿色卡片上的两个按钮。Key 留空。"
+      },
+      {
+        "id": "cmp-29046-24656",
+        "name": "自动确认提示",
+        "type": "FRAME",
+        "figma_node_id": "29046:24656",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "scr-0238",
+        "width": 120,
+        "height": 120,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "弹框外壳",
+        "structure": "对勾 + 两行文字",
+        "style": "120×120，圆角 8，填充 #000000，纵向，间距 13，内边距上 8、右 16、下 8、左 16。文字 14 PingFang HK Regular #ffffff。",
+        "states": "只读到这一态。",
+        "asset_ids": [
+          "general-check"
+        ],
+        "instances": [],
+        "note": "候选项。确认中界面上的黑色提示。Key 留空。"
+      },
+      {
+        "id": "cmp-29046-29133",
+        "name": "更换",
+        "type": "FRAME",
+        "figma_node_id": "29046:29133",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 82,
+        "height": 30,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "图标 + 文字",
+        "style": "82×30，圆角 30，无填充，描边 #ffffff 粗细 1，横向，间距 6，内边距上 0、右 16、下 0、左 16。文字「更换」14 PingFang SC Medium #ffffff。",
+        "states": "只读到这一态。悬停、禁用未读到。",
+        "asset_ids": [
+          "general-switch"
+        ],
+        "instances": [],
+        "note": "候选项。支付页蓝色条上的更换按钮。同页还有几处同尺寸按钮，没有逐个再对字节。Key 留空。"
+      },
+      {
+        "id": "cmp-21049-9459",
+        "name": "Jio",
+        "type": "FRAME",
+        "figma_node_id": "21049:9459",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 64,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "底色横条 + 左侧名称 + 右侧标志",
+        "style": "360×64，圆角 8。有阴影的投影向下 4、模糊 10、不透明度 0.4。Jio 用 bank-bar-jio-shadow。无阴影用去掉投影的那一份。",
+        "states": "读到有阴影和无阴影。选中、悬停、禁用未读到。",
+        "asset_ids": [
+          "bank-bar-jio-shadow",
+          "bank-jio"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "21049:9476",
+            "screen_id": "",
+            "label": "Jio 无阴影",
+            "style_note": "横条素材 bank-bar-jio"
+          },
+          {
+            "figma_node_id": "21049:9493",
+            "screen_id": "",
+            "label": "Super money 有阴影",
+            "style_note": "横条素材 bank-bar-supermoney-shadow"
+          },
+          {
+            "figma_node_id": "21049:9499",
+            "screen_id": "",
+            "label": "Super money 无阴影",
+            "style_note": "横条素材 bank-bar-supermoney"
+          },
+          {
+            "figma_node_id": "21049:9405",
+            "screen_id": "",
+            "label": "BHIM AXIS 有阴影",
+            "style_note": "横条素材 bank-bar-axis-shadow"
+          },
+          {
+            "figma_node_id": "21049:9432",
+            "screen_id": "",
+            "label": "BHIM AXIS 无阴影",
+            "style_note": "横条素材 bank-bar-axis"
+          },
+          {
+            "figma_node_id": "21049:9414",
+            "screen_id": "",
+            "label": "Navi 有阴影",
+            "style_note": "横条素材 bank-bar-navi-shadow"
+          },
+          {
+            "figma_node_id": "21049:9423",
+            "screen_id": "",
+            "label": "Navi 无阴影",
+            "style_note": "横条素材 bank-bar-navi"
+          },
+          {
+            "figma_node_id": "21049:9441",
+            "screen_id": "",
+            "label": "MoneyView 有阴影",
+            "style_note": "横条素材 bank-bar-moneyview-shadow"
+          },
+          {
+            "figma_node_id": "21049:9450",
+            "screen_id": "",
+            "label": "MoneyView 无阴影",
+            "style_note": "横条素材 bank-bar-moneyview"
+          },
+          {
+            "figma_node_id": "21049:9685",
+            "screen_id": "",
+            "label": "pop 有阴影",
+            "style_note": "横条素材 bank-bar-dark-shadow"
+          },
+          {
+            "figma_node_id": "21049:9686",
+            "screen_id": "",
+            "label": "pop 无阴影",
+            "style_note": "横条素材 bank-bar-dark"
+          },
+          {
+            "figma_node_id": "21049:9689",
+            "screen_id": "",
+            "label": "twid 有阴影",
+            "style_note": "横条素材 bank-bar-dark-shadow"
+          },
+          {
+            "figma_node_id": "21049:9690",
+            "screen_id": "",
+            "label": "twid 无阴影",
+            "style_note": "横条素材 bank-bar-dark"
+          }
+        ],
+        "note": "候选项。底色横条已按有阴影、无阴影入库，名称和标志仍是单独的素材。新银行复制这条，换横条颜色或直接用已有横条，再换标志。Key 留空。"
+      },
+      {
+        "id": "cmp-21049-9965",
+        "name": "Mobikwik 水印底",
+        "type": "FRAME",
+        "figma_node_id": "21049:9965",
+        "key": "",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 60,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "底色横条 + 10% 透明度的银行标志",
+        "style": "360×60，圆角 8，没有投影。Mobikwik 渐变 #2184DC 到 #0242CF。标志不透明度 0.1。",
+        "states": "只读到这一态。选中、悬停、禁用未读到。",
+        "asset_ids": [
+          "bank-watermark-mobikwik"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "21049:9969",
+            "screen_id": "",
+            "label": "PhonePe",
+            "style_note": "渐变 #8937DC 到 #52259F。标志 bank-watermark-phonepe。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:9973",
+            "screen_id": "",
+            "label": "红色条，节点名 Mobikwik",
+            "style_note": "渐变 #F04848 到 #EF1414。标志 bank-watermark-mobikwik-red。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:9977",
+            "screen_id": "",
+            "label": "Paytm",
+            "style_note": "渐变 #6FD0FA 到 #38B5EB。标志 bank-watermark-paytm。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:9986",
+            "screen_id": "",
+            "label": "Freecharge",
+            "style_note": "渐变 #FF9752 到 #F56224。标志 bank-watermark-freecharge。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:9990",
+            "screen_id": "",
+            "label": "Jio",
+            "style_note": "渐变与 bank-bar-jio 相同。标志 bank-watermark-jio。"
+          },
+          {
+            "figma_node_id": "21049:9994",
+            "screen_id": "",
+            "label": "Super money",
+            "style_note": "渐变与 bank-bar-supermoney 相同。标志 bank-watermark-supermoney。"
+          },
+          {
+            "figma_node_id": "21049:9998",
+            "screen_id": "",
+            "label": "BHIM AXIS",
+            "style_note": "纯色与 bank-bar-axis 相同。标志 bank-watermark-axis。"
+          },
+          {
+            "figma_node_id": "21049:10002",
+            "screen_id": "",
+            "label": "Freo",
+            "style_note": "纯色 #212121。标志 bank-watermark-freo。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:10006",
+            "screen_id": "",
+            "label": "slice",
+            "style_note": "渐变 #E51BE9 到 #C71ECA。标志 bank-watermark-slice。上次没有这条颜色。"
+          },
+          {
+            "figma_node_id": "21049:10024",
+            "screen_id": "",
+            "label": "twid",
+            "style_note": "纯色与 bank-bar-dark 相同。标志 bank-watermark-twid。"
+          },
+          {
+            "figma_node_id": "21049:10030",
+            "screen_id": "",
+            "label": "pop",
+            "style_note": "纯色与 bank-bar-dark 相同。标志 bank-watermark-pop。"
+          },
+          {
+            "figma_node_id": "21049:9720",
+            "screen_id": "",
+            "label": "MoneyView",
+            "style_note": "渐变与 bank-bar-moneyview 相同。标志 bank-watermark-moneyview。"
+          },
+          {
+            "figma_node_id": "21049:10010",
+            "screen_id": "",
+            "label": "Navi",
+            "style_note": "渐变与 bank-bar-navi 相同。标志 bank-watermark-navi。"
+          }
+        ],
+        "note": "候选项。买入 BANK 的水印底样式。底色横条和 10% 标志叠在同一个框里，单独导出横条会把标志一起带上，所以新颜色记在实例上，不另存一张带标志的色条。已有同色横条直接沿用。Key 留空。"
+      },
+      {
+        "id": "cmp-27147-19879",
+        "name": "支付方式标签栏",
+        "figma_node_id": "27147:19879",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 29,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "标签切换",
+        "structure": "四个标签横排：UPI、OTP-UPI、Bank、USDT。每个标签右上角挂一个橙色角标，选中项下面有短横线。",
+        "style": "360×29，横向，间距 24，左内边距 15。选中「USDT」18 Bold #1F262F，下划线 25×3 #1F262F。未选中 #99A1AC Regular。角标底 #FF631B，文字 +5%、+3%、+2%、1:100。",
+        "states": "读到 USDT 选中态。其他三项选中态在 UPI、OTP-UPI、BANK 各行界面上，未逐个登记。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "26449:10464",
+            "screen_id": "",
+            "label": "第二张买入_USDT 界面",
+            "style_note": "同一标签栏，USDT 选中。"
+          }
+        ],
+        "note": "候选项。买入四种支付方式共用这条标签栏。Key 留空。",
+        "key": "",
+        "type": "FRAME"
+      },
+      {
+        "id": "cmp-27147-19682",
+        "name": "USDT 兑换数量框",
+        "figma_node_id": "27147:19682",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 98,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "输入框",
+        "structure": "标题行（左文案，右币种徽标和币种名）+ 数量行。两张框上下叠放，中间压一个互换按钮。",
+        "style": "360×98，圆角 8，纵向，间距 6，内边距 16。USDT 框填充 #1BA27A，ARB 框填充 #FAC10C，文字白色。占位「请输入购买数量」，数量 851,600 为示例。互换按钮 30×30 白底。",
+        "states": "读到输入态和 ARB 余额不足态：余额不足时「10000（余额不足）」变成 #F63E3E。",
+        "asset_ids": [
+          "business-usdt-badge",
+          "business-arb-badge",
+          "business-swap-usdt-arb"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "27147:19673",
+            "screen_id": "",
+            "label": "ARB 需支付框",
+            "style_note": "填充 #FAC10C，右上角 business-arb-badge。"
+          },
+          {
+            "figma_node_id": "29060:73586",
+            "screen_id": "",
+            "label": "余额不足弹层里的 USDT 框",
+            "style_note": "同一样式。"
+          },
+          {
+            "figma_node_id": "29060:73577",
+            "screen_id": "",
+            "label": "余额不足弹层里的 ARB 框",
+            "style_note": "高 96，数量文字 #F63E3E。"
+          }
+        ],
+        "note": "候选项。买入 USDT 的兑换输入组。Key 留空。",
+        "key": "",
+        "type": "FRAME"
+      },
+      {
+        "id": "cmp-27147-19700",
+        "name": "充值",
+        "figma_node_id": "27147:19700",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 48,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "按钮",
+        "structure": "整宽按钮，居中文字。",
+        "style": "360×48，圆角 8，填充 #FFC40B，文字「充值」16 #1F262F。",
+        "states": "读到默认态和禁用态：禁用 29060:73601 填充 #E6E7EB，文字为「卖出」，应是原稿占位文字。",
+        "asset_ids": [],
+        "instances": [
+          {
+            "figma_node_id": "29060:73601",
+            "screen_id": "",
+            "label": "余额不足时的禁用按钮",
+            "style_note": "填充 #E6E7EB。"
+          }
+        ],
+        "note": "候选项。与买入按钮 cmp-1-4624 同色，高度是 48 不是 46，所以单列。Key 留空。",
+        "key": "",
+        "type": "FRAME"
+      },
+      {
+        "id": "cmp-27147-24453",
+        "name": "网络选择弹窗",
+        "figma_node_id": "27147:24453",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 330,
+        "height": 257,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "弹框",
+        "structure": "标题「Select Network」+ 关闭 + 黄色提示图标和说明 + 网络选项列表。选项是 298×60 的描边行，左侧网络图标，右侧网络名和协议。",
+        "style": "330×257，圆角 8，白底，纵向，间距 10，内边距 16。选项 298×60，圆角 8，描边 #E6E7EB，内边距 6。",
+        "states": "只读到默认态。选项选中态未读到。",
+        "asset_ids": [
+          "crypto-tron",
+          "crypto-bnb",
+          "general-info",
+          "general-close-x"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "27147:24470",
+            "screen_id": "",
+            "label": "Tron TRC20 选项",
+            "style_note": "图标 crypto-tron。"
+          },
+          {
+            "figma_node_id": "26449:10464",
+            "screen_id": "",
+            "label": "第二张买入_USDT 界面里的同一弹窗",
+            "style_note": "弹窗内容与独立画板相同。"
+          }
+        ],
+        "note": "候选项。关闭和提示图标与已有 general-close-x、general-info 相同。Key 留空。",
+        "key": "",
+        "type": "FRAME"
+      },
+      {
+        "id": "cmp-27147-19759",
+        "name": "USDT 买入记录卡",
+        "figma_node_id": "27147:19759",
+        "page_id": "1:424",
+        "parent_id": "",
+        "width": 360,
+        "height": 145,
+        "standardized": false,
+        "instance_reuse_verified": false,
+        "variants": null,
+        "properties": null,
+        "control": true,
+        "control_kind": "列表项",
+        "structure": "头部（金额 + TRON 图标 + 状态文字）+ 明细（数量、时间、订单号和复制图标）。",
+        "style": "360×145，圆角 8。头部 360×46，填充 #F7F8FC，描边 #EBECF0，内边距 12。状态颜色：等待转账 #63A1FF，支付过期 #E7AF00，确认中和已完成 #4CB957，购买失败 #FC7878。",
+        "states": "读到五种状态：等待转账、支付过期、确认中、已完成、购买失败。",
+        "asset_ids": [
+          "crypto-tron",
+          "general-copy-fill"
+        ],
+        "instances": [
+          {
+            "figma_node_id": "27147:19783",
+            "screen_id": "",
+            "label": "支付过期",
+            "style_note": "状态 #E7AF00。"
+          },
+          {
+            "figma_node_id": "27147:19807",
+            "screen_id": "",
+            "label": "确认中",
+            "style_note": "状态 #4CB957。"
+          },
+          {
+            "figma_node_id": "27147:19831",
+            "screen_id": "",
+            "label": "已完成",
+            "style_note": "状态 #4CB957。"
+          },
+          {
+            "figma_node_id": "27147:19855",
+            "screen_id": "",
+            "label": "购买失败",
+            "style_note": "状态 #FC7878。"
+          },
+          {
+            "figma_node_id": "26449:10814",
+            "screen_id": "",
+            "label": "USDT买入记录界面",
+            "style_note": "列表同款卡片。"
+          }
+        ],
+        "note": "候选项。订单号后的复制图标是 general-copy-fill。Key 留空。",
+        "key": "",
+        "type": "FRAME"
+      }
+    ]
+  },
+  "plannedComponents": {
+    "count": 0,
+    "note": "此前 component-index 的 components 为空，状态是 blocked。没有一份已创建的规划组件清单。"
+  },
+  "standardizedComponents": []
+}

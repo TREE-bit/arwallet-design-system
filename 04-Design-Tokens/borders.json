@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed"
+  },
+  "existing": [
+    { "weight": 1, "hex": "#DCDDE0", "status": "Existing", "sampleCount": 112, "page": "订单流转", "pageId": "1:6406" },
+    { "weight": 1, "hex": "#E6E7EB", "status": "Existing", "sampleCount": 41, "page": "我的", "pageId": "1:6407" },
+    { "weight": 1, "hex": "#EBECF0", "status": "Existing", "sampleCount": 37, "page": "我的", "pageId": "1:6407" },
+    { "weight": 1, "hex": "#CED4E5", "status": "Existing", "sampleCount": 57, "page": "订单流转", "pageId": "1:6406" },
+    { "weight": 1, "hex": "#4CB957", "status": "Existing", "sampleCount": 16, "page": "卖出业务", "pageId": "1:6405", "note": "成功态描边，不是默认边框。" },
+    { "weight": 1, "hex": "#FC7878", "status": "Existing", "sampleCount": 23, "page": "卖出业务", "pageId": "1:6405", "note": "错误态描边。" },
+    { "weight": 0.5, "hex": "#122237", "status": "Existing", "sampleCount": 28, "page": "买入业务", "pageId": "1:424", "note": "细描边，可能是图标或发丝线。" },
+    { "weight": 2, "hex": "#FFFFFF", "status": "Existing", "sampleCount": 36, "page": "卖出业务", "pageId": "1:6405", "note": "白色描边，场景未逐个归类。" }
+  ],
+  "recommended": [
+    { "name": "border.default", "status": "Recommended", "confirmation": "unconfirmed", "weight": 1, "hex": "#DCDDE0", "scene": "输入框、分割和普通描边的优先候选" },
+    { "name": "border.danger", "status": "Pending", "confirmation": "unconfirmed", "weight": 1, "hex": "#FC7878", "scene": "错误描边" },
+    { "name": "border.success", "status": "Pending", "confirmation": "unconfirmed", "weight": 1, "hex": "#4CB957", "scene": "成功描边" }
+  ],
+  "divider": {
+    "status": "Pending",
+    "confirmation": "unconfirmed",
+    "note": "采样把 stroke 混在一起，没有单独证明分割线是 1px #DCDDE0 还是另一组灰色。确认前不要把所有 1px 描边都叫做分割线。"
+  }
+}

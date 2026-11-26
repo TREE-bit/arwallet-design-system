@@ -1,0 +1,321 @@
+{
+  "built_at": "2026-11-26",
+  "businesses": [
+    {
+      "id": "biz-splash",
+      "name": "启动",
+      "number": "0",
+      "page_ids": [
+        "1:52"
+      ],
+      "screen_rows": 12,
+      "module_status": "部分完成",
+      "step_b": "部分完成",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-auth",
+      "name": "登录注册",
+      "number": "1",
+      "page_ids": [
+        "29056:6919"
+      ],
+      "screen_rows": 5,
+      "module_status": "部分完成",
+      "step_b": "已完成",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-home",
+      "name": "首页",
+      "number": "2",
+      "page_ids": [
+        "29044:4234",
+        "2240:4771"
+      ],
+      "screen_rows": 88,
+      "module_status": "部分完成",
+      "step_b": "部分完成",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-sell",
+      "name": "卖出",
+      "number": "3",
+      "page_ids": [
+        "1:6405"
+      ],
+      "screen_rows": 30,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-buy",
+      "name": "买入",
+      "number": "4",
+      "page_ids": [
+        "1:424",
+        "23880:22185",
+        "924:1655",
+        "29014:57123",
+        "1:6406",
+        "18638:12209"
+      ],
+      "screen_rows": 219,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-payee",
+      "name": "收款方式",
+      "number": "5",
+      "page_ids": [
+        "29045:18489"
+      ],
+      "screen_rows": 12,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-benefit",
+      "name": "权益",
+      "number": "6",
+      "page_ids": [
+        "29056:5353",
+        "29056:23815"
+      ],
+      "screen_rows": 32,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-profile",
+      "name": "我的",
+      "number": "8",
+      "page_ids": [
+        "1:6407",
+        "29056:23814",
+        "29056:15155"
+      ],
+      "screen_rows": 82,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-growth",
+      "name": "运营推广",
+      "number": "9",
+      "page_ids": [
+        "19139:7881"
+      ],
+      "screen_rows": 14,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    },
+    {
+      "id": "biz-lottery",
+      "name": "彩票（待整理）",
+      "number": "10",
+      "page_ids": [
+        "1:20315"
+      ],
+      "screen_rows": 0,
+      "module_status": "未处理",
+      "step_b": "未处理",
+      "step_c": "未处理",
+      "step_d": "未处理"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "1:52",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "部分完成",
+      "modules": "部分完成",
+      "components": "部分完成",
+      "elements": "部分完成",
+      "component_note": "列出的界面已读四类控件。7 张启动画面没有这四类控件。悬停、禁用、勾选、展开未读到。截图和模块仍未处理。"
+    },
+    {
+      "page_id": "29056:6919",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "已完成",
+      "modules": "部分完成",
+      "components": "部分完成",
+      "elements": "部分完成",
+      "component_note": "五张界面的按钮、输入框、下拉、复选框已读。悬停、禁用、勾选未读到。截图和模块仍未处理。"
+    },
+    {
+      "page_id": "29044:4234",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "部分完成",
+      "modules": "部分完成",
+      "components": "部分完成",
+      "elements": "部分完成",
+      "component_note": "十张界面和公告弹窗的按钮已读。没有读到输入框、下拉、复选框。悬停和禁用未读到。横幅和订单卡片未逐张拆完。截图和模块仍未处理。"
+    },
+    {
+      "page_id": "2240:4771",
+      "node_read": "部分完成",
+      "screen_catalog": "部分完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "1:6405",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "部分完成",
+      "components": "部分完成",
+      "elements": "部分完成",
+      "component_note": "卖出主要界面已读四类控件和提示弹框。匹配等待图形不是色条。截图仍待获取。悬停和禁用未读到。"
+    },
+    {
+      "page_id": "1:424",
+      "node_read": "部分完成",
+      "screen_catalog": "部分完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "部分完成",
+      "elements": "部分完成"
+    },
+    {
+      "page_id": "23880:22185",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "部分完成",
+      "elements": "部分完成"
+    },
+    {
+      "page_id": "924:1655",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "29014:57123",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "1:6406",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "18638:12209",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "部分完成",
+      "elements": "部分完成"
+    },
+    {
+      "page_id": "29045:18489",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "29056:5353",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "29056:23815",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "1:6407",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "29056:23814",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "29056:15155",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "19139:7881",
+      "node_read": "已完成",
+      "screen_catalog": "已完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    },
+    {
+      "page_id": "1:20315",
+      "node_read": "部分完成",
+      "screen_catalog": "部分完成",
+      "screenshot": "待获取",
+      "modules": "未处理",
+      "components": "未处理",
+      "elements": "未处理"
+    }
+  ]
+}

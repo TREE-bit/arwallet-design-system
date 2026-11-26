@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "gridConclusion": "文件没有统一的 8px 间距体系。Auto Layout itemSpacing 的最高频是 10，其后是 4、8、6。16 和 24 存在，但不是默认步长。不得把 8 或 4 写成已经存在的唯一基准。"
+  },
+  "existingGapFrequency": [
+    { "px": 10, "status": "Existing", "rank": 1, "evidence": "买入 356、卖出 238、订单 489、我的 333、教程 223、收银台 267、自动交易 279" },
+    { "px": 4, "status": "Existing", "rank": 2, "evidence": "买入 187、卖出 217、订单 374、收银台 151" },
+    { "px": 8, "status": "Existing", "rank": 3, "evidence": "买入 116、卖出 88、订单 261、教程 147、收银台 201" },
+    { "px": 6, "status": "Existing", "evidence": "买入 110、卖出 45、订单 301、教程 122" },
+    { "px": 16, "status": "Existing", "evidence": "买入 71、订单 51、我的 39。彩票页 16 的排名更高，但不并入客户端。" },
+    { "px": 12, "status": "Existing", "evidence": "订单 49、我的 43" },
+    { "px": 24, "status": "Existing", "evidence": "买入 39、卖出 59、我的 58、申诉 10" },
+    { "px": 0, "status": "Existing", "note": "大量 Auto Layout 间隙为 0，通常是紧贴分组，不是页面节奏。" },
+    { "px": 181, "status": "Existing", "note": "订单 307、买入 33、教程 109。这是异常大间隙，多半来自撑开布局，不能当间距 token。" }
+  ],
+  "existingPaddingFrequency": [
+    { "value": "0,15,0,15", "status": "Existing", "scene": "标题行左右 15", "evidence": "我的 61、卖出 33、订单 60、买入 30" },
+    { "value": "0,14,0,14", "status": "Existing", "scene": "另一套左右 14", "evidence": "我的 57、卖出 26、订单 58、买入 28" },
+    { "value": "12,12,12,12", "status": "Existing", "scene": "卡片或列表内边距", "evidence": "卖出 58、订单 231、我的 51、收银台 61" },
+    { "value": "16,16,16,16", "status": "Existing", "scene": "弹框或区块内边距", "evidence": "卖出 44、申诉 7。短信验证内容相对弹框左边距为 16。" },
+    { "value": "8,12,8,12", "status": "Existing", "scene": "紧凑行", "evidence": "买入 60。旧订单弹框操作行使用这一组。" },
+    { "value": "16,12,16,12", "status": "Existing", "evidence": "买入 30、我的 20" }
+  ],
+  "recommended": [
+    { "name": "space.stack", "status": "Recommended", "confirmation": "unconfirmed", "px": 10, "scene": "同组组件的默认垂直间距", "reason": "跨页面 itemSpacing 的众数。" },
+    { "name": "space.stack-tight", "status": "Recommended", "confirmation": "unconfirmed", "px": 4, "scene": "图标与短标签、紧凑行", "reason": "第二高频，且是小控件内部常见值。" },
+    { "name": "space.inset-page-x", "status": "Recommended", "confirmation": "unconfirmed", "px": 15, "scene": "页面左右边距", "reason": "0,15,0,15 略多于 0,14,0,14。14 仍大量存在，确认前不要批量改旧稿。" },
+    { "name": "space.inset-dialog", "status": "Recommended", "confirmation": "unconfirmed", "px": 16, "scene": "弹框内容边距，以及标题区到正文", "reason": "短信验证弹框内容 x 与弹框 x 相差 16，底部也是 16。" },
+    { "name": "space.card", "status": "Recommended", "confirmation": "unconfirmed", "px": 12, "scene": "卡片内边距", "reason": "12,12,12,12 在订单、收银台、卖出重复出现。" },
+    { "name": "space.section", "status": "Pending", "confirmation": "unconfirmed", "px": 24, "scene": "大区块间距", "reason": "24 出现次数稳定，但是否作为区块间距尚未按区块类型拆开。" }
+  ]
+}

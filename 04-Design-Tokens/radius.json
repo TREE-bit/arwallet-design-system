@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "extractedAt": "2026-11-24",
+    "confirmation": "unconfirmed",
+    "note": "圆角 1 与 1.5 在买入和订单页计数很高，来自图标或小几何，不作为按钮和卡片圆角。"
+  },
+  "existing": [
+    { "px": 8, "status": "Existing", "scenes": ["主按钮", "输入框", "弹框", "卡片"], "evidence": "买入 137、卖出 221、订单 349、我的 228、收银台 162。弹框节点 4455:3530。", "nodeId": "4455:3530" },
+    { "px": 4, "status": "Existing", "scenes": ["小按钮", "部分标签"], "evidence": "买入 176、卖出 112、订单 233。发送按钮 4455:3539。", "nodeId": "4455:3539" },
+    { "px": 16, "status": "Existing", "scenes": ["部分卡片与图片容器"], "evidence": "买入 34、卖出 26、订单 58、我的 57、收银台 27" },
+    { "px": 24, "status": "Existing", "scenes": ["胶囊或圆形容器"], "evidence": "买入 86、卖出 26、订单 78、我的 57" },
+    { "px": 10, "status": "Existing", "scenes": ["彩票页"], "evidence": "彩票样本 265。不纳入 390 客户端推荐。", "pageId": "1:20315" }
+  ],
+  "recommended": [
+    { "name": "radius.control", "status": "Recommended", "confirmation": "unconfirmed", "px": 8, "scene": "按钮、输入框、弹框、普通卡片" },
+    { "name": "radius.compact", "status": "Recommended", "confirmation": "unconfirmed", "px": 4, "scene": "高度 32 的小按钮" },
+    { "name": "radius.card-large", "status": "Pending", "confirmation": "unconfirmed", "px": 16, "scene": "大卡片", "note": "16 与 8 同时大量存在，哪类卡片用 16 尚未按组件归类。" },
+    { "name": "radius.pill", "status": "Pending", "confirmation": "unconfirmed", "px": 24, "scene": "标签或头像外框", "note": "头像是否使用 24、39 或正圆，本次没有按头像组件单独统计。" }
+  ]
+}

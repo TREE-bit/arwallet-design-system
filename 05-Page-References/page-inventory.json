@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "project": "ARWallet",
+    "sourceFileKey": "YYptLQ7axFJt2SrhF2u6JU",
+    "sourceUrl": "https://www.figma.com/design/YYptLQ7axFJt2SrhF2u6JU/AR-Wallet",
+    "extractedAt": "2026-11-24",
+    "pageCount": 15,
+    "note": "screenCount 是宽度 360 到 430 的顶层 Frame 数量，含状态重复稿，不是唯一用户流程数。换肤、UI界面整理、UI走查与正式页面重复，不参与 token 频率。"
+  },
+  "pages": [
+    { "id": "1:52", "name": "启动页", "group": "product", "childCount": 36, "screenCount": 2, "tokenSample": "complete-3169-nodes", "samples": ["下载页 390x844"] },
+    { "id": "2240:4771", "name": "教程引导", "group": "product", "childCount": 107, "screenCount": 72, "tokenSample": "capped-5000", "samples": ["选择UPI APP 390x844", "输入支付密码 390x844"] },
+    { "id": "1:424", "name": "买入业务", "group": "product", "childCount": 312, "screenCount": 177, "tokenSample": "capped-8000", "samples": ["首页 390x2361", "买入_自选列表 390x844", "买入_弹窗 390x1332"] },
+    { "id": "23880:22185", "name": "买入业务-内挂智能抢单", "group": "product", "childCount": 45, "screenCount": 33, "tokenSample": "inventory-only", "samples": ["智能抢单_买入_UPI 390x844", "订单未完成 390x844"] },
+    { "id": "1:6405", "name": "卖出业务", "group": "product", "childCount": 116, "screenCount": 87, "tokenSample": "complete-4008-nodes", "samples": ["卖出_短信验证 390x844", "卖出_添加收款账户_带出账户号 390x844"] },
+    { "id": "924:1655", "name": "收银台", "group": "product", "childCount": 41, "screenCount": 32, "tokenSample": "capped-5000", "samples": ["任务 390x958", "ARWallet_支付中_app 390x852"] },
+    { "id": "29014:57123", "name": "交易申诉", "group": "product", "childCount": 4, "screenCount": 3, "tokenSample": "complete-239-nodes", "samples": ["充值申诉_1 390x914", "KYC断链重新提交 390x844"] },
+    { "id": "1:6406", "name": "订单流转", "group": "product", "childCount": 73, "screenCount": 62, "tokenSample": "capped-8000", "samples": ["卖出_确认弹窗 390x844", "订单_买入 390x1859"] },
+    { "id": "1:6407", "name": "我的", "group": "product", "childCount": 236, "screenCount": 176, "tokenSample": "capped-8000", "samples": ["我的_未实名", "设置 390x844", "收款信息 390x844"] },
+    { "id": "18638:12209", "name": "自动交易", "group": "product", "childCount": 49, "screenCount": 45, "tokenSample": "capped-5000", "samples": ["输入支付密码 390x844", "收款信息_已登录 390x844"] },
+    { "id": "19139:7881", "name": "运营推广落地页", "group": "product", "childCount": 18, "screenCount": 10, "tokenSample": "inventory-only", "samples": ["AR Wallet落地页首页 390x1430", "常见问题 390x850"] },
+    { "id": "1:20315", "name": "AR钱包_彩票", "group": "separate-surface", "childCount": 301, "screenCount": 29, "tokenSample": "capped-5000", "note": "主画面宽约 750，字体和色板与 390 客户端不同。", "samples": ["ARB充值 750x4074"] },
+    { "id": "22365:9776", "name": "UI界面整理", "group": "reference-duplicate", "childCount": 277, "screenCount": 215, "tokenSample": "inventory-only" },
+    { "id": "24867:3406", "name": "【参考】换肤", "group": "reference-duplicate", "childCount": 284, "screenCount": 219, "tokenSample": "inventory-only" },
+    { "id": "3165:3766", "name": "【参考】1.5版本UI走查", "group": "reference", "childCount": 541, "screenCount": 118, "tokenSample": "inventory-only" }
+  ],
+  "reuse": {
+    "status": "Existing",
+    "repeatedStructures": [
+      "390 宽手机框在买入、卖出、订单、我的、教程中重复。",
+      "StatusBar_white 与 iOS 状态栏实例在买入、卖出、订单、我的反复出现。",
+      "底部导航 icon_home / icon_order / icon_task / icon_my 成对复用。",
+      "主按钮 48 高、#FFC40B、圆角 8，出现在买入与卖出。",
+      "输入框 48 高、#F5F6FA、圆角 8，出现在短信验证。",
+      "弹框宽 330、圆角 8、白底、标题 20 Semibold，出现在卖出短信验证，旧订单限制弹框同宽。"
+    ],
+    "notComponents": "除状态栏和底部导航图标外，按钮、输入框、列表行、弹框大多是普通 Frame。不能把这些 Frame 当成已发布组件。"
+  }
+}
