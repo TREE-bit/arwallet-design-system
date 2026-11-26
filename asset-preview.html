@@ -32,12 +32,16 @@
   a { color: #8a6500; }
   .empty { padding: 40px 0; color: #7e858e; }
 
-  .panels { display: grid; gap: 12px; margin-top: 20px; }
-  .panel { background: #fff; border: 1px solid #e4e6eb; border-radius: 10px; padding: 12px 14px; }
-  .panel h2 { margin: 0 0 8px; font-size: 15px; }
-  .panel li { margin: 4px 0; }
-  .pair { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
-  .pair img { width: 72px; height: 48px; object-fit: contain; background: #1f262f; border-radius: 6px; }
+  .doc { background: #fff; border: 1px solid #e4e6eb; border-radius: 10px; padding: 16px 18px 8px; margin: 0 0 16px; }
+  .doc h2 { margin: 0 0 4px; font-size: 18px; }
+  .doc h3 { margin: 18px 0 8px; font-size: 15px; }
+  .doc .stamp { margin: 0 0 8px; color: #8a6500; }
+  .doc .note { margin: 0 0 8px; color: #5d6575; }
+  .doc table { width: 100%; border-collapse: collapse; margin: 0 0 8px; }
+  .doc th, .doc td { border-bottom: 1px solid #eef0f3; padding: 6px 8px; text-align: left; vertical-align: top; }
+  .doc th { color: #7e858e; font-weight: 600; white-space: nowrap; }
+  .swatch { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch i { width: 14px; height: 14px; border-radius: 3px; border: 1px solid #e4e6eb; display: inline-block; }
   .nav { display: flex; gap: 8px; margin: 0 0 12px; }
   .nav button[aria-pressed="true"] { background: #1f262f; color: #fff; border-color: #1f262f; }
   .lead { margin: 0 0 12px; color: #5d6575; }
@@ -85,15 +89,14 @@
 <main>
   <section id="view-assets">
     <div class="grid" id="grid"></div>
-    <div class="panels" id="panels"></div>
   </section>
   <section id="view-components" hidden>
     <p class="lead">出稿前先在这里找同名控件。有记录就沿对照路径回 Figma 节点和引用素材。没有记录就不要另造一套样式。候选项没有 Key，标准化未完成，实例复用未验证。</p>
     <div class="grid" id="cmp-grid"></div>
   </section>
   <section id="view-tokens" hidden>
-    <p class="lead">设计规范仍用 04-Design-Tokens 的 8 个文件。确认状态是 unconfirmed。本页不抄数值，避免把未确认的色值和字号当成定稿。</p>
-    <div class="panel" id="token-list"></div>
+    <p class="lead">下面 8 份文档直接读取 04-Design-Tokens 里的文件。确认状态仍是未确认，这里只是把条目摊开阅读，不另写一套数值。</p>
+    <div id="token-list"></div>
   </section>
 </main>
 <script id="data" type="application/json">{
@@ -6852,10 +6855,8 @@
     }
   ]
 }</script>
-<script id="extra" type="application/json">{"coverage": {"updated_at": "2026-11-25", "method": "按页面读取顶层 Frame。没有一次遍历整页深层节点。截图不能自动对上节点坐标，所以视觉素材数量标为待核实，不写百分比。", "limits": ["未加载的页面，顶层子节点读出来是 0。必须先切到该页。本轮没有刷新内挂、收银台、订单流转、自动交易、换肤、走查的顶层名单。", "卖出页顶层 116 个，本轮只记下前 40 个。", "教程引导和我的的内容在 Section 里面。顶层只有 Section，内部没有扫完。", "get_screenshot 只给画面，不返回图层坐标，不能自动把视觉对象对上节点。"], "excluded_pages": [{"page_id": "1:20315", "page_name": "AR钱包_彩票", "reason": "按任务排除"}, {"page_id": "22365:9776", "page_name": "UI界面整理", "reason": "参考页，不重复导出"}, {"page_id": "24867:3406", "page_name": "【参考】换肤", "reason": "参考页，不重复导出。本轮未刷新顶层名单。"}, {"page_id": "3165:3766", "page_name": "【参考】1.5版本UI走查", "reason": "参考页，不重复导出。本轮未刷新顶层名单。"}], "pages": [{"page_id": "1:52", "page_name": "启动页", "scan_status": "top_listed", "node_read_complete": true, "top_listed": 36, "top_total": 36, "client_frames_in_list": 3, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "顶层 36 个已列出。内部画面没有逐个截图。512 桌面标、金币装饰、登录背景还没导出。", "frames": [{"id": "1:53", "name": "1", "type": "FRAME", "w": 815, "h": 844}, {"id": "1:55", "name": "2", "type": "FRAME", "w": 815, "h": 844}, {"id": "8233:2", "name": "3", "type": "FRAME", "w": 815, "h": 844}, {"id": "29006:8581", "name": "4", "type": "FRAME", "w": 815, "h": 844}, {"id": "29014:2", "name": "5", "type": "FRAME", "w": 815, "h": 844}, {"id": "1:57", "name": "ARB_后台logo", "type": "FRAME", "w": 232, "h": 64}, {"id": "1:69", "name": "ARB_后台logo_小", "type": "FRAME", "w": 64, "h": 64}, {"id": "1:71", "name": "ARB_App_logo", "type": "FRAME", "w": 64, "h": 64}, {"id": "1:75", "name": "ARB_logo", "type": "FRAME", "w": 200, "h": 200}, {"id": "1:87", "name": "App_icon_1024", "type": "FRAME", "w": 1024, "h": 1024}, {"id": "9096:1948", "name": "App_icon_1024", "type": "FRAME", "w": 1024, "h": 1024}, {"id": "1:91", "name": "App_icon_120", "type": "FRAME", "w": 120, "h": 120}, {"id": "1:95", "name": "启动页_640x960", "type": "FRAME", "w": 640, "h": 960}, {"id": "1:142", "name": "启动页_640x1136", "type": "FRAME", "w": 640, "h": 1136}, {"id": "1:189", "name": "启动页_750x1334", "type": "FRAME", "w": 750, "h": 1334}, {"id": "4683:1159", "name": "Frame 4", "type": "FRAME", "w": 121, "h": 140}, {"id": "4683:1136", "name": "Frame 3", "type": "FRAME", "w": 391, "h": 382}, {"id": "1:236", "name": "启动页_828x1792", "type": "FRAME", "w": 828, "h": 1792}, {"id": "1:283", "name": "启动页_1125x2436", "type": "FRAME", "w": 1125, "h": 2436}, {"id": "1:330", "name": "启动页_1242x2208", "type": "FRAME", "w": 1242, "h": 2208}, {"id": "1:377", "name": "启动页_1242x2688", "type": "FRAME", "w": 1242, "h": 2688}, {"id": "4229:1161", "name": "添加桌面_logo_192x192", "type": "FRAME", "w": 192, "h": 192}, {"id": "4229:1164", "name": "添加桌面_logo_512x512", "type": "FRAME", "w": 512, "h": 512}, {"id": "7563:2425", "name": "AR Wallet登录页背景", "type": "FRAME", "w": 1920, "h": 960}, {"id": "7602:4376", "name": "Frame 1420069918", "type": "FRAME", "w": 475, "h": 354}, {"id": "7597:4053", "name": "Group 1420069916", "type": "GROUP", "w": 905, "h": 715}, {"id": "7602:4362", "name": "Frame 1420069917", "type": "FRAME", "w": 109, "h": 167}, {"id": "7750:2", "name": "ARB商户后台-2", "type": "FRAME", "w": 1920, "h": 1080}, {"id": "7750:547", "name": "ARB总后台-2", "type": "FRAME", "w": 1920, "h": 1080}, {"id": "8267:5377", "name": "下载页", "type": "FRAME", "w": 390, "h": 844}, {"id": "8275:5513", "name": "金币2", "type": "GROUP", "w": 100, "h": 250}, {"id": "8275:5497", "name": "金币1", "type": "GROUP", "w": 95, "h": 124}, {"id": "9096:1952", "name": "IMG_0004 1", "type": "RECTANGLE", "w": 1170, "h": 2532}, {"id": "9096:1953", "name": "App_icon_1024", "type": "RECTANGLE", "w": 181, "h": 181}, {"id": "9096:1954", "name": "ARWallet", "type": "TEXT", "w": 156, "h": 50}, {"id": "29006:8533", "name": "Frame 1", "type": "FRAME", "w": 1920, "h": 1080}]}, {"page_id": "1:6405", "page_name": "卖出业务", "scan_status": "partial_top_list", "node_read_complete": false, "top_listed": 14, "top_total": 116, "client_frames_in_list": 14, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "顶层共 116 个。本轮工具返回了前 40 个，清单里只保留客户端画面和失败节点所在行，其余顶层未写入。", "frames": [{"id": "1:6650", "name": "卖出", "type": "FRAME", "w": 390, "h": 2143}, {"id": "1:6910", "name": "卖出_无法卖出", "type": "FRAME", "w": 390, "h": 2143}, {"id": "16181:7754", "name": "卖出_奖励卡", "type": "FRAME", "w": 390, "h": 902}, {"id": "16183:10830", "name": "卖出_奖励卡_提示弹窗", "type": "FRAME", "w": 390, "h": 902}, {"id": "5220:17776", "name": "卖出_输入金额", "type": "FRAME", "w": 390, "h": 884}, {"id": "10026:1575", "name": "Frame 4535059", "type": "FRAME", "w": 360, "h": 166}, {"id": "10855:7586", "name": "卖出_KYC链接正常", "type": "FRAME", "w": 390, "h": 1134}, {"id": "15099:5161", "name": "UPI被禁用", "type": "FRAME", "w": 390, "h": 1002}, {"id": "10860:8067", "name": "卖出_输入卖出金额_拆单方式2", "type": "FRAME", "w": 390, "h": 1239}, {"id": "7163:1819", "name": "卖出_添加收款账户_带出账户号", "type": "FRAME", "w": 390, "h": 844}, {"id": "1:9019", "name": "卖出_取消订单", "type": "FRAME", "w": 390, "h": 844}, {"id": "1:9093", "name": "卖出_取消订单", "type": "FRAME", "w": 390, "h": 844}, {"id": "4455:3496", "name": "卖出_短信验证", "type": "FRAME", "w": 390, "h": 844}, {"id": "21049:11347", "name": "Frame 1420070559", "type": "FRAME", "w": 360, "h": 64}]}, {"page_id": "29014:57123", "page_name": "交易申诉", "scan_status": "top_listed", "node_read_complete": true, "top_listed": 4, "top_total": 4, "client_frames_in_list": 3, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "4 个顶层都已列出。MobiKwik、Super.money、airtel 已写入。没有逐屏截图点数。", "frames": [{"id": "29014:57124", "name": "1", "type": "FRAME", "w": 815, "h": 844}, {"id": "29014:57131", "name": "充值申诉_1", "type": "FRAME", "w": 390, "h": 914}, {"id": "29014:57244", "name": "充值申诉_2", "type": "FRAME", "w": 390, "h": 844}, {"id": "29014:57268", "name": "KYC断链重新提交", "type": "FRAME", "w": 390, "h": 844}]}, {"page_id": "19139:7881", "page_name": "运营推广落地页", "scan_status": "top_listed", "node_read_complete": false, "top_listed": 14, "top_total": 18, "client_frames_in_list": 14, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "顶层共 18 个。名单只写入宽 390 或 1024 的客户端画面，导航条没有逐条写入。早先深层扫描未截断，视觉数量仍待核实。", "frames": [{"id": "19139:9939", "name": "Legitimate Mobile Side Hustles——New", "type": "FRAME", "w": 390, "h": 2690}, {"id": "19681:4295", "name": "Affiliate Center_1", "type": "FRAME", "w": 390, "h": 2500}, {"id": "19833:2103", "name": "AR Wallet落地页首页", "type": "FRAME", "w": 1024, "h": 3644}, {"id": "19833:2402", "name": "常见问题", "type": "FRAME", "w": 1024, "h": 2246}, {"id": "19833:2548", "name": "新手教程", "type": "FRAME", "w": 1024, "h": 2180}, {"id": "19833:2729", "name": "首页", "type": "FRAME", "w": 1024, "h": 1740}, {"id": "19833:2856", "name": "加入交流群", "type": "FRAME", "w": 1024, "h": 1740}, {"id": "19833:2983", "name": "下载页", "type": "FRAME", "w": 1024, "h": 1740}, {"id": "20348:1426", "name": "AR Wallet落地页首页", "type": "FRAME", "w": 390, "h": 1430}, {"id": "20348:1723", "name": "常见问题", "type": "FRAME", "w": 390, "h": 850}, {"id": "20348:1870", "name": "新手教程", "type": "FRAME", "w": 390, "h": 840}, {"id": "20348:2040", "name": "首页", "type": "FRAME", "w": 390, "h": 700}, {"id": "20348:2165", "name": "加入交流群", "type": "FRAME", "w": 390, "h": 700}, {"id": "20348:2290", "name": "加入交流群", "type": "FRAME", "w": 390, "h": 700}]}, {"page_id": "1:424", "page_name": "买入业务", "scan_status": "top_listed_interior_incomplete", "node_read_complete": true, "top_listed": 18, "top_total": 18, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "顶层 18 个，多数是导航组件。名称查找在 20000 个节点后截断。24px App_icon 已补存。", "frames": [{"id": "12331:3047", "name": "老版本备份", "type": "SECTION", "w": 4541, "h": 4050}, {"id": "14033:2592", "name": "8.23 解除禁用功能", "type": "SECTION", "w": 425, "h": 52}]}, {"page_id": "1:6407", "page_name": "我的", "scan_status": "interior_incomplete", "node_read_complete": true, "top_listed": 2, "top_total": 2, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "顶层是两个备份 Section。早先名称扫描在 8001 个节点截断。icon 组 2461:2242 确认是隐藏组。", "frames": [{"id": "12432:18344", "name": "老版本备份", "type": "SECTION", "w": 6793, "h": 2497}, {"id": "12331:5287", "name": "老版本备份", "type": "SECTION", "w": 10746, "h": 6720}]}, {"page_id": "2240:4771", "page_name": "教程引导", "scan_status": "interior_incomplete", "node_read_complete": true, "top_listed": 2, "top_total": 2, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "当前顶层是两个同名 Section。早先深层遍历三次触顶，不能当成内部已扫完。", "frames": [{"id": "29014:7384", "name": "新蚂蚁会员邀请步骤引导", "type": "SECTION", "w": 4576, "h": 10898}, {"id": "29014:28624", "name": "新蚂蚁会员邀请步骤引导", "type": "SECTION", "w": 5996, "h": 10898}]}, {"page_id": "23880:22185", "page_name": "买入业务-内挂智能抢单", "scan_status": "not_refreshed", "node_read_complete": false, "top_listed": 0, "top_total": null, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "本轮没有重新读取顶层。早先深层遍历 7221 个节点且未截断。横版 PhonePe、MobiKwik、Freecharge 和空状态 SVG 仍未落盘。", "frames": []}, {"page_id": "924:1655", "page_name": "收银台", "scan_status": "not_refreshed", "node_read_complete": false, "top_listed": 0, "top_total": null, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "本轮没有重新读取顶层。早先只定点导出了 PhonePe 和 Paytm。", "frames": []}, {"page_id": "1:6406", "page_name": "订单流转", "scan_status": "not_refreshed", "node_read_complete": false, "top_listed": 0, "top_total": null, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "本轮没有重新读取顶层。早先深层遍历 8019 个节点且未截断。隐藏状态图标仍然导出失败。", "frames": []}, {"page_id": "18638:12209", "page_name": "自动交易", "scan_status": "not_refreshed", "node_read_complete": false, "top_listed": 0, "top_total": null, "client_frames_in_list": 0, "visual_asset_count": null, "visual_status": "待核实", "matched_asset_count": null, "new_asset_count": null, "existing_asset_count": null, "unlocated_count": null, "export_fail_count": null, "excluded_count": null, "note": "本轮没有重新读取顶层。早先深层遍历 4344 个节点且未截断。空状态 SVG 仍未落盘。", "frames": []}], "failures": [{"node_id": "21049:11361", "name": "MobiKwik_logo 2", "page": "卖出业务", "reason": "节点自身可见，父级 logo 21049:11349 不可见，导出报没有可见图层。可见副本已存 bank-mobikwik.svg。"}, {"node_id": "2461:2242", "name": "icon", "page": "我的", "reason": "组本身 visible 为 false。子层有矩形、矢量和布尔运算，但组被隐藏，导出失败。没有生成替代文件。"}, {"node_id": "14899:6727", "name": "icon_卖出功能封禁", "page": "订单流转", "reason": "上一轮节点可见但仍导出失败。本轮未重试成功，未造假。"}, {"node_id": "19833:2393", "name": "AR Wallet", "page": "运营推广落地页", "reason": "上一轮导出失败，没有可见图层。"}], "qr_decision": {"node_id": "14607:4069", "name": "icon_QR码", "result": "保留为通用图标。节点是 Frame，里面 1 个矢量、0 个图片填充，不是带交易信息的支付码。文件 business-qr.svg 已在库中。"}}, "similarity": {"rule": "只记录候选关联，不删除文件。选中与未选中导航继续都保留。", "candidates": [{"assets": ["logo-mark-64", "logo-app-64", "logo-app-120", "logo-mark-192"], "kind": "同一金色 A 的不同尺寸或白底", "action": "keep"}, {"assets": ["logo-app-icon-1024", "logo-app-icon-512"], "kind": "同一应用图标位图的两档原图", "action": "keep"}, {"assets": ["logo-app-dark-24", "logo-app-gold-100"], "kind": "都是 A 标，底色和字标不同", "action": "keep"}, {"assets": ["logo-arb-admin", "logo-arwallet-wordmark"], "kind": "都是金色 A 加深色字，版式不同", "action": "keep"}, {"assets": ["banner-tutorial-720", "banner-tutorial-360"], "kind": "同一教程图的两种原图尺寸", "action": "keep"}, {"assets": ["bank-phonepe", "bank-phonepe-ring"], "kind": "都是 PhonePe 图形，颜色和尺寸不同", "action": "keep"}, {"assets": ["illustration-appeal-1", "illustration-appeal-phone-alt"], "kind": "同一题材的两张原图", "action": "keep"}, {"assets": ["illustration-appeal-2", "illustration-appeal-card-alt"], "kind": "同一题材的两张原图", "action": "keep"}, {"assets": ["avatar-03", "avatar-04"], "kind": "同一人物的两张原图", "action": "keep"}, {"assets": ["business-reward-type", "business-order-reward"], "kind": "颜色接近，图形不同", "action": "keep"}, {"assets": ["nav-home-active", "nav-home-inactive"], "kind": "选中与未选中", "action": "keep"}, {"assets": ["nav-task-active", "nav-task-inactive"], "kind": "颜色不同，白色图形也不同", "action": "keep"}]}, "failures": [{"node_id": "21049:11361", "name": "MobiKwik_logo 2", "page": "卖出业务", "reason": "节点自身可见，父级 logo 21049:11349 不可见，导出报没有可见图层。可见副本已存 bank-mobikwik.svg。"}, {"node_id": "2461:2242", "name": "icon", "page": "我的", "reason": "组本身 visible 为 false。子层有矩形、矢量和布尔运算，但组被隐藏，导出失败。没有生成替代文件。"}, {"node_id": "14899:6727", "name": "icon_卖出功能封禁", "page": "订单流转", "reason": "上一轮节点可见但仍导出失败。本轮未重试成功，未造假。"}, {"node_id": "19833:2393", "name": "AR Wallet", "page": "运营推广落地页", "reason": "上一轮导出失败，没有可见图层。"}], "pending": ["横版 PhonePe、MobiKwik、Freecharge 字标已导出过，文件还没写入。", "三张空状态和表情图标已导出过，文件还没写入。", "512 桌面标已入库。金币仍是组合组，登录背景是 1920×960 组合画板，都没有整份导出。", "卖出页还有 76 个顶层节点没写入扫描清单。", "教程引导和我的的 Section 内部没有扫完。", "内挂、收银台、订单流转、自动交易的顶层名单本轮没刷新。"]}</script>
 <script>
 const index = JSON.parse(document.getElementById("data").textContent);
-const extra = JSON.parse(document.getElementById("extra").textContent);
 const assets = index.assets;
 const byId = Object.fromEntries(assets.map(a => [a.asset_id, a]));
 const grid = document.getElementById("grid");
@@ -6943,63 +6944,6 @@ function render() {
     });
     grid.appendChild(card);
   }
-}
-function renderPanels() {
-  const root = document.getElementById("panels");
-  root.innerHTML = "";
-  const sim = document.createElement("section");
-  sim.className = "panel";
-  sim.innerHTML = "<h2>疑似重复，只关联不删除</h2>";
-  extra.similarity.candidates.forEach(c => {
-    const row = document.createElement("div");
-    row.className = "pair";
-    c.assets.forEach(id => {
-      const a = byId[id];
-      if (!a) return;
-      const img = document.createElement("img");
-      img.src = a.file_path;
-      img.alt = a.asset_name;
-      img.title = a.asset_name;
-      row.appendChild(img);
-    });
-    const label = document.createElement("span");
-    label.textContent = c.kind;
-    row.appendChild(label);
-    sim.appendChild(row);
-  });
-  const prog = document.createElement("section");
-  prog.className = "panel";
-  prog.innerHTML = "<h2>页面扫描进度</h2><ul></ul>";
-  const ul = prog.querySelector("ul");
-  extra.coverage.pages.forEach(p => {
-    const li = document.createElement("li");
-    li.textContent = p.page_name + " · " + p.scan_status + " · 顶层 " + p.top_listed + "/" + (p.top_total == null ? "未刷新" : p.top_total) + " · 视觉数量待核实";
-    ul.appendChild(li);
-  });
-  extra.coverage.excluded_pages.forEach(p => {
-    const li = document.createElement("li");
-    li.textContent = p.page_name + " · 排除 · " + p.reason;
-    ul.appendChild(li);
-  });
-  const fail = document.createElement("section");
-  fail.className = "panel";
-  fail.innerHTML = "<h2>导出失败</h2><ul></ul>";
-  const ful = fail.querySelector("ul");
-  extra.failures.forEach(f => {
-    const li = document.createElement("li");
-    li.textContent = f.node_id + " " + f.name + "（" + f.page + "）" + f.reason;
-    ful.appendChild(li);
-  });
-  const pend = document.createElement("section");
-  pend.className = "panel";
-  pend.innerHTML = "<h2>待确认</h2><ul></ul>";
-  const pul = pend.querySelector("ul");
-  extra.pending.forEach(t => {
-    const li = document.createElement("li");
-    li.textContent = t;
-    pul.appendChild(li);
-  });
-  root.append(sim, prog, fail, pend);
 }
 const FILE_KEY = "YYptLQ7axFJt2SrhF2u6JU";
 const controlSlots = [
@@ -7133,19 +7077,136 @@ function renderComponents() {
       : "组件索引还没有载入。";
   }
 }
+const tokenDocs = [
+  { file: "colors.json", title: "颜色" },
+  { file: "typography.json", title: "字体" },
+  { file: "spacing.json", title: "间距" },
+  { file: "sizing.json", title: "尺寸" },
+  { file: "radius.json", title: "圆角" },
+  { file: "borders.json", title: "描边" },
+  { file: "shadows.json", title: "阴影" },
+  { file: "icon-rules.json", title: "图标" }
+];
+const tokenKeyLabel = {
+  name: "名称", status: "状态", confirmation: "确认", hex: "色值", rgba: "RGBA", role: "用途",
+  reason: "依据", scene: "场景", evidence: "样本", note: "说明", page: "页面", sampleCount: "样本数",
+  px: "数值", family: "字体", weight: "字重", size: "字号", lineHeight: "行高", align: "对齐",
+  color: "颜色", nodeId: "节点", nodeIds: "节点", pages: "页面", roles: "字重", rank: "排序",
+  value: "取值", type: "类型", offsetX: "水平偏移", offsetY: "垂直偏移", blur: "模糊", spread: "扩展",
+  alpha: "不透明度", candidates: "候选", suggestion: "建议", group: "组", values: "色值", rule: "规则",
+  statement: "说明", category: "分类", id: "编号", scopes: "范围", height: "高度", width: "宽度",
+  padding: "内边距", sample: "样本"
+};
+const tokenSectionTitle = {
+  existing: "稿面已有", existingVariables: "文件里已有的颜色变量", existingObservations: "采样到的颜色",
+  existingFamilies: "用过的字体", existingSizes: "用过的字号", existingGapFrequency: "间距出现次数",
+  existingPaddingFrequency: "内边距", existingComponents: "已有的导航图标", recommended: "推荐，尚未确认",
+  pending: "还不能定", observations: "读取结论", nearDuplicates: "相近但还没合并的颜色", divider: "分割线"
+};
+const tokenStatusText = { Existing: "稿面已有", Recommended: "推荐", Pending: "待定" };
+const tokenSkip = new Set(["pageId", "sourceFileKey", "project", "sourceFileName"]);
+let tokenCache = null;
+
+function tokenCell(key, value) {
+  if (value == null || value === "") return document.createTextNode("—");
+  if (key === "status" && tokenStatusText[value]) return document.createTextNode(tokenStatusText[value]);
+  if (key === "confirmation") return document.createTextNode(value === "unconfirmed" ? "未确认" : String(value));
+  if ((key === "hex" || key === "color") && typeof value === "string" && value.charAt(0) === "#") {
+    const span = document.createElement("span");
+    span.className = "swatch";
+    const chip = document.createElement("i");
+    chip.style.background = value;
+    span.appendChild(chip);
+    span.appendChild(document.createTextNode(value));
+    return span;
+  }
+  if (Array.isArray(value)) return document.createTextNode(value.map(v => typeof v === "object" ? JSON.stringify(v) : String(v)).join("、"));
+  if (typeof value === "object") {
+    return document.createTextNode(Object.entries(value).map(pair => (tokenKeyLabel[pair[0]] || pair[0]) + " " + pair[1]).join("，"));
+  }
+  return document.createTextNode(String(value));
+}
+function tokenTable(rows) {
+  const keys = [];
+  rows.forEach(row => {
+    Object.keys(row).forEach(key => {
+      if (!tokenSkip.has(key) && keys.indexOf(key) < 0) keys.push(key);
+    });
+  });
+  const table = document.createElement("table");
+  const head = document.createElement("tr");
+  keys.forEach(key => {
+    const th = document.createElement("th");
+    th.textContent = tokenKeyLabel[key] || key;
+    head.appendChild(th);
+  });
+  table.appendChild(head);
+  rows.forEach(row => {
+    const tr = document.createElement("tr");
+    keys.forEach(key => {
+      const td = document.createElement("td");
+      td.appendChild(tokenCell(key, row[key]));
+      tr.appendChild(td);
+    });
+    table.appendChild(tr);
+  });
+  return table;
+}
+function paintTokens(host, docs) {
+  host.innerHTML = "";
+  docs.forEach(doc => {
+    const article = document.createElement("article");
+    article.className = "doc";
+    const h2 = document.createElement("h2");
+    h2.textContent = doc.title;
+    article.appendChild(h2);
+    const stamp = document.createElement("p");
+    stamp.className = "stamp";
+    const meta = doc.data.meta || {};
+    stamp.textContent = "确认状态：未确认" + (meta.extractedAt ? " · 读取于 " + meta.extractedAt : "") + " · " + doc.file;
+    article.appendChild(stamp);
+    Object.keys(meta).forEach(key => {
+      if (tokenSkip.has(key) || key === "extractedAt" || key === "confirmation") return;
+      const value = meta[key];
+      if (value == null || typeof value === "object") return;
+      const p = document.createElement("p");
+      p.className = "note";
+      p.textContent = String(value);
+      article.appendChild(p);
+    });
+    Object.keys(doc.data).forEach(key => {
+      if (key === "meta") return;
+      const value = doc.data[key];
+      const h3 = document.createElement("h3");
+      h3.textContent = tokenSectionTitle[key] || key;
+      article.appendChild(h3);
+      if (Array.isArray(value) && value.length && typeof value[0] === "object") article.appendChild(tokenTable(value));
+      else if (value && typeof value === "object" && !Array.isArray(value)) {
+        const p = document.createElement("p");
+        p.className = "note";
+        p.textContent = Object.entries(value).filter(pair => !tokenSkip.has(pair[0])).map(pair => (tokenKeyLabel[pair[0]] || pair[0]) + "：" + pair[1]).join("。");
+        article.appendChild(p);
+      }
+    });
+    host.appendChild(article);
+  });
+}
 function renderTokens() {
   const host = document.getElementById("token-list");
-  const files = ["colors.json", "typography.json", "spacing.json", "sizing.json", "radius.json", "borders.json", "shadows.json", "icon-rules.json"];
-  host.innerHTML = "<h2>设计规范文件</h2><ul></ul>";
-  const ul = host.querySelector("ul");
-  files.forEach(name => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = "04-Design-Tokens/" + name;
-    a.textContent = "04-Design-Tokens/" + name;
-    li.appendChild(a);
-    li.appendChild(document.createTextNode(" · 确认状态 unconfirmed"));
-    ul.appendChild(li);
+  if (tokenCache) {
+    paintTokens(host, tokenCache);
+    return;
+  }
+  host.textContent = "正在读取规范文件…";
+  Promise.all(tokenDocs.map(doc => fetch("04-Design-Tokens/" + doc.file).then(res => {
+    if (!res.ok) throw new Error(doc.file);
+    return res.json().then(data => ({ file: doc.file, title: doc.title, data: data }));
+  }))).then(docs => {
+    tokenCache = docs;
+    paintTokens(host, docs);
+    if (viewName === "tokens") document.getElementById("count").textContent = "8 份规范文档。确认状态仍是未确认。";
+  }).catch(() => {
+    host.textContent = "没有读到 04-Design-Tokens 里的规范文件。";
   });
 }
 function showView(name) {
@@ -7162,7 +7223,7 @@ function showView(name) {
   if (name === "components") renderComponents();
   if (name === "tokens") {
     renderTokens();
-    document.getElementById("count").textContent = "8 个规范文件。数值未在本页展开。";
+    document.getElementById("count").textContent = tokenCache ? "8 份规范文档。确认状态仍是未确认。" : "正在读取规范文件…";
   }
 }
 q.addEventListener("input", render);
@@ -7176,7 +7237,6 @@ document.querySelectorAll("[data-view]").forEach(btn => {
 document.getElementById("cq").addEventListener("input", renderComponents);
 document.getElementById("ckind").addEventListener("change", renderComponents);
 render();
-renderPanels();
 fetch("03-Components/component-index.json")
   .then(res => res.json())
   .then(data => { library = data; renderComponents(); })
